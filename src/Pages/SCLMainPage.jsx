@@ -4,9 +4,9 @@ import Footer from '../Components/Footer'
 
 export default function SCLMainPage() {
   return (
-    <div className='flex flex-col min-h-screen'>
+    <div className=''>
         <Navigation />
-        <div className='flex-1 bg-slate-600'>
+        <div className='bg-slate-600'>
             
         </div>
         <Footer />
