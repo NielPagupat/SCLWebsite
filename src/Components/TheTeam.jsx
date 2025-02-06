@@ -10,7 +10,7 @@ export default function TheTeam() {
         <div className='grid grid-cols-2'>
             {
                 team.map((emp) => 
-                <div className='flex flex-col m-5 items-center'>
+                <div className='flex flex-col m-5 items-center' key={emp}>
                     <img src="" alt="Picture" className='size-72 border border-black'/>
                     <h1 className='font-semibold'>Name</h1>
                     <p>Position</p>

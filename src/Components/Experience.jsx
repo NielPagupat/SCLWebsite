@@ -1,7 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router'
 
 export default function Experience() {
     const content = [1,2,3,4,5,6,7,8]
+
+    const navigate = useNavigate()
+
+    const goToExp = () => {
+        navigate('/SCL/Experience')
+    }
   return (
     <div className='flex flex-col mt-10 items-end'>
         <div className='flex w-screen justify-start p-5'>
@@ -16,7 +23,9 @@ export default function Experience() {
                 </div>)
                 
             }
-            <button className='mr-5 h-24 size-16'><h1 className='w-28 underline text-blue-600'>see more...</h1></button>
+            <button className='mr-5 h-24 size-16' onClick={goToExp}>
+                <h1 className='w-28 underline text-blue-600'>see more...</h1>
+            </button>
         </div>
     </div>
   )
