@@ -5,10 +5,10 @@ import { aboutUs } from '../assets/Text/text'
 export default function AboutUs() {
     const services = [1, 2, 3, 4]
   return (
-    <div>
+    <div id='about-us'>
         <div className='flex'>
             <div className='p-5'>
-                <img src="" alt="Logo" className='size-96 border '/>                
+                <img src="" alt="Logo" className='size-96 border border-black shadow-xl'/>                
             </div>
             <div className='p-5'>
                 <h1 className='text-4xl font-semibold'>About Us</h1>
@@ -21,7 +21,7 @@ export default function AboutUs() {
                 {
                     services.map((val) => 
                         <div key={val} className='flex flex-col items-center m-2'>
-                            <img src="" alt="service" className='size-80 border' />
+                            <img src="" alt="service" className='size-80 border border-black rounded-md shadow-xl' />
                             <p className='font-semibold '>Service Name</p>
                         </div>
                     )

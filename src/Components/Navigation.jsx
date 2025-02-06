@@ -1,9 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronUp } from "lucide-react";
+import { useLocation, useNavigate } from 'react-router';
 
 export default function Navigation() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -15,34 +18,98 @@ export default function Navigation() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const goToAboutUs = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    })
+  }
+
+  const goToProductsPortfolio = () => {
+    const element = document.getElementById('products-portfolio');
+    if (element) {
+      const offset = 100;
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth',
+      });
+    }
+  }
+
+  const goToExperience = () => {
+    const element = document.getElementById('experience');
+    if (element) {
+      const offset = 100;
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth',
+      });
+    }
+  }
+
+  const goToTeam = () => {
+    const element = document.getElementById('the-team');
+    if (element) {
+      const offset = 100;
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth',
+      });
+    }
+  }
+
+  const back = () => {
+    navigate(-1)
+  }
+
+  const backToBanner = () => {
+    navigate('/')
+  }
+
   return (
-    <div className='sticky top-0 flex min-w-screen justify-between p-3 border-b border-black drop-shadow-xl bg-white'>
+    <div className='sticky top-0 flex min-w-screen justify-between p-3 border-b border-gray-300 drop-shadow-xl bg-gradient-to-b from-blue-600 to-lime-200'>
       <div className='flex-1'>
-        <img src="" alt="Logo" />
+        <img src="" alt="Logo" onClick={backToBanner} className='border size-14'/>
       </div>
-      <div className='flex flex-1 justify-end items-center'>
-        <div 
-          className='relative' 
-          ref={dropdownRef} 
-          onMouseEnter={() => setIsDropdownOpen(true)} 
-        >
-          <button 
-            className='mr-10 p-3 flex items-center gap-2' 
+      {location.pathname === '/SCL'?
+        <div className='flex flex-1 justify-end items-center'>
+          <div 
+            className='relative' 
+            ref={dropdownRef} 
+            onMouseEnter={() => setIsDropdownOpen(true)} 
           >
-            About Us <ChevronDown className="w-4 h-4" />
-          </button>
-          {isDropdownOpen && (
-            <div className='absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg' onMouseLeave={()=>setIsDropdownOpen(false)}>
-              <ul className='py-2 text-gray-700'>
-                <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>Our Story</li>
-                <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>Team</li>
-              </ul>
-            </div>
-          )}
-        </div>
-        <button className='mr-10 p-3'>Product Portfolio</button>
-        <button className='mr-10 p-3'>Experiences</button>
-      </div>
+            <button 
+              className='mr-10 p-3 flex items-center gap-2' 
+            >
+              About Us {isDropdownOpen?<ChevronUp className="w-4 h-4" />:<ChevronDown className="w-4 h-4" />}
+              
+            </button>
+            {isDropdownOpen && (
+              <div className='absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg' onMouseLeave={()=>setIsDropdownOpen(false)}>
+                <ul className='py-2 text-gray-700'>
+                  <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer' onClick={goToAboutUs}>Our Story</li>
+                  <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer' onClick={goToTeam}>Team</li>
+                </ul>
+              </div>
+            )}
+          </div>
+          <button className='mr-10 p-3' onClick={goToProductsPortfolio}>Product Portfolio</button>
+          <button className='mr-10 p-3' onClick={goToExperience}>Experiences</button>
+        </div> : 
+        location.pathname === "/SCL/Products"?
+          <div className='flex items-center'>
+            <button onClick={back}><ChevronLeft/></button>
+            <h1 className='font-semibold mr-10 p-3'>Products</h1>
+          </div>:
+          <div className='flex items-center'>
+            <button onClick={back}><ChevronLeft/></button>
+            <h1 className='font-semibold mr-10 p-3'>Experiences</h1>
+          </div>
+      }
+      
     </div>
   );
 }

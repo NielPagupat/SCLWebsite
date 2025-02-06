@@ -10,16 +10,16 @@ export default function LandingPage() {
     }
   return (
     <div className='min-h-screen flex flex-1 flex-col'>
-        <div>
-            Design
+        <div className='static'>
+            <div className='w-1/3 h-14 clip-trapezoid bg-gradient-to-br from-blue-800 to-cyan-100' />
         </div>
-        <div className='flex flex-1 justify-center items-center '>
-            <div className='flex flex-col items-center border border-black rounded-xl p-5'>
-                <div className='flex'>
-                    <img src="" alt="logo" />
-                    <span>Dura Computer Services</span>
+        <div className='flex flex-1 justify-center items-center'>
+            <div className='flex flex-col items-center border border-black rounded-xl p-5 shadow-xl'>
+                <div className='flex items-center'>
+                    <img src="" alt="logo" className='size-28 border'/>
+                    <span className='ml-8 text-4xl font-semibold    '>Dura Computer Services</span>
                 </div>
-                <span className=''>
+                <span className='text-xl'>
                     Software & Hardware Solutions
                 </span>
                 <span className='mt-5'>
@@ -30,8 +30,8 @@ export default function LandingPage() {
                 </span>
             </div>
         </div>
-        <div>
-            Design
+        <div className='flex justify-end'>
+            <div className='w-1/3 h-14 clip-trapezoid-reverse bg-gradient-to-tl from-blue-800 to-cyan-100'/>
         </div>
     </div>
   )
