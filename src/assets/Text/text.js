@@ -1,0 +1,3 @@
+export const aboutUs = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean metus lectus, malesuada vitae posuere et, posuere ut est. Morbi a nibh volutpat, convallis lectus viverra, tempus metus. Nam porta maximus condimentum. Etiam faucibus ipsum quis tellus gravida molestie. Vestibulum egestas lectus eu ipsum interdum tristique. Cras non mattis dui. Maecenas commodo vehicula odio, eget dictum augue scelerisque sit amet. Nam vitae pellentesque enim. Donec feugiat efficitur risus, quis tempor odio mattis vitae. Cras maximus ullamcorper est a sollicitudin. Nunc nisi orci, finibus eu ipsum sit amet, dapibus interdum elit."
+
+

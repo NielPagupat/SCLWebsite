@@ -9,7 +9,7 @@ export default function Footer() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div 
-    className="fixed bottom-0 w-full flex p-4 bg-white border-t border-gray-200 shadow-2xl"
+    className="fixed bottom-0 w-full flex p-4 bg-white border-t border-black shadow-2xl"
     onMouseEnter={() => setIsOpen(true)}
     onMouseLeave={() => setIsOpen(false)}
   >
@@ -20,7 +20,7 @@ export default function Footer() {
         animate={{ y: 0 }}
         exit={{ y: "100%" }}
         transition={{ type: "spring", stiffness: 200, damping: 20 }}
-        className="fixed bottom-0 left-0 w-full bg-white shadow-2xl rounded-t-2xl p-6 border-t border-gray-200"
+        className="fixed bottom-0 left-0 w-full bg-white shadow-2xl rounded-t-2xl p-6 border-t border-black"
       >
         <div className="flex justify-between items-center">
           <h2 className="text-lg font-semibold">Contact Us</h2>

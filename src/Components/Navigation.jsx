@@ -16,7 +16,7 @@ export default function Navigation() {
   }, []);
 
   return (
-    <div className='sticky top-0 flex min-w-screen justify-between p-3 border-b border-black drop-shadow-2xl bg-white'>
+    <div className='sticky top-0 flex min-w-screen justify-between p-3 border-b border-black drop-shadow-xl bg-white'>
       <div className='flex-1'>
         <img src="" alt="Logo" />
       </div>
