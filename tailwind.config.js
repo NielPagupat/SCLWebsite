@@ -11,6 +11,7 @@ export default {
         SCLBlue: '#05F9EF',//blue
         SCLLightBlue: '##210FF7',//light blue
         SCLWhite: '##FFFFFF',//white
+        Yellow: '#e3d80b',//yellow
       },
 
     },
