@@ -1,8 +1,9 @@
 import { Search } from 'lucide-react'
 import React from 'react'
+import { allProducts } from '../assets/Products/products'
 
 export default function ProductsAll() {
-    const items = [1,2,3,4,5,6,7,8,9,10,11,12]
+    const items = allProducts
   return (
     <div>
         <div className='flex justify-end mt-5 mr-5 pr-10'>
@@ -11,10 +12,10 @@ export default function ProductsAll() {
         </div>
         <div className='grid grid-cols-3 border border-black mt-5 mx-10 rounded-lg'>
             {
-                items.map((e)=> 
+                items.map((Prod, e)=> 
                 <div className='flex flex-col items-center p-5' key={e}>
                     <img src="" alt="picture" className='size-60 border border-black'/>
-                    <h1>Item Name</h1>
+                    <h1 className='text-center font-tomorrow font-semibold'>{Prod.projectTitle}</h1>
                 </div>
                 )
             }

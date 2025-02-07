@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import { useNavigate } from 'react-router';
+import { allProducts } from '../assets/Products/products';
 
 export default function ProductPortfolio() {
-    const content = [1, 2, 3, 4, 5, 6, 7, 8];
+    const content = allProducts;
     const navigate = useNavigate();
     const scrollRef = useRef(null);
 
@@ -38,10 +39,10 @@ export default function ProductPortfolio() {
                 onMouseEnter={disablePageScroll} // Stop page scrolling
                 onMouseLeave={enablePageScroll} // Re-enable page scrolling
             >
-                {content.map((con) => (
-                    <div key={con} className="flex flex-col items-center">
+                {content.map((con, i) => (
+                    <div key={i} className="flex flex-col items-center size-80 mx-5">
                         <img src="" alt="Product" className="size-48 border border-black shadow-lg m-5 rounded-md" />
-                        <h3 className="font-semibold">Product Name</h3>
+                        <h3 className="font-semibold text-center">{con.projectTitle}</h3>
                     </div>
                 ))}
                 <button className="mr-5 h-24 size-16" onClick={goToProdAll}>

@@ -8,6 +8,7 @@ import SCLMainPage from './Pages/SCLMainPage'
 import ProductsAll from './Components/ProductsAll'
 import MainPageContent from './Components/MainPageContent'
 import ExperienceAll from './Components/ExperienceAll'
+import Test from './Pages/Test'
 
 function App() {
  
@@ -20,7 +21,9 @@ function App() {
           <Route path='/SCL' element={<MainPageContent />}/>
           <Route path='/SCL/Products' element={<ProductsAll />}/>
           <Route path='/SCL/Experience' element={<ExperienceAll />}/>
+          <Route path='/SCL/Experience' element={<ExperienceAll />}/>
         </Route>
+        <Route path='/Test' element={<Test />}/>
       </Routes>
     </BrowserRouter> 
   )
