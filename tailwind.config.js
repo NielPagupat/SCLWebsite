@@ -6,7 +6,10 @@ export default {
   ],
   theme: {
     extend: {
-      
+      colors: {
+        customColor: '#ff5733',
+      },
+
     },
   },
   plugins: [],
