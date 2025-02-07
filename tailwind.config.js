@@ -16,7 +16,7 @@ export default {
       fontFamily:{
         tomorrow: ['Tomorrow', 'sans-serif'],
       }
-    },
+     
   },
   plugins: [],
 }
