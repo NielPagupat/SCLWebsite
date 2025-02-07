@@ -70,7 +70,7 @@ export default function Navigation() {
   }
 
   return (
-    <div className='sticky top-0 flex min-w-screen justify-between p-3 border-b border-gray-300 drop-shadow-xl bg-gradient-to-b from-blue-600 to-lime-200'>
+    <div className='sticky top-0 flex min-w-screen justify-between p-3 border-b border-gray-300 drop-shadow-xl bg-gradient-to-b from-cyan-400 to-lime-100'>
       <div className='flex-1'>
         <img src="" alt="Logo" onClick={backToBanner} className='border size-14'/>
       </div>

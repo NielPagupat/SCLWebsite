@@ -20,7 +20,7 @@ export default function Footer() {
         animate={{ y: 0 }}
         exit={{ y: "100%" }}
         transition={{ type: "spring", stiffness: 200, damping: 20 }}
-        className="fixed bottom-0 left-0 w-full bg-cyan-500 shadow-2xl rounded-t-2xl p-6 border-t border-black"
+        className="fixed bottom-0 left-0 w-full shadow-2xl rounded-t-2xl p-6 border-t border-black bg-gradient-to-t from-sky-400 to-lime-100"
       >
         <div className="flex justify-between items-center">
           <h2 className="text-lg font-semibold">Contact Us</h2>
