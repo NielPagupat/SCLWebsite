@@ -26,7 +26,7 @@ export default function LandingPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-1 bg-gradient-to-b from-yellow-300 to-yellow-500">
+    <div className="min-h-screen flex flex-1">
       {/* <div className='static'>
             <div className='w-1/3 h-14 clip-trapezoid bg-gradient-to-br from-blue-800 to-cyan-100' />
         </div>   */}
@@ -43,7 +43,7 @@ export default function LandingPage() {
             </span>
             <span className="text-2xl">Software & Hardware Solutions</span>
           </div>
-          <p className="text-justify p-4 indent-8 text-xl">
+          <p className="text-justify p-4 indent-8 text-2xl font-tomorrow">
             SCL, or Software & Computer Logistics, is a leading provider of
             comprehensive IT solutions. We specialize in delivering top-notch
             software and hardware services tailored to meet the unique needs of
@@ -78,7 +78,7 @@ export default function LandingPage() {
         </div> */}
       <div className="flex flex-1 flex-col justify-start align-start items-start p-4">
         <div className="flex flex-row items-center justify-end border border-black rounded-xl p-2 shadow-xl flex-1 w-full text-2xl font-semibold">
-          <div className="flex flex-col justify-around items-start border border-black rounded-xl p-2 shadow-xl m-2 h-full p-7">
+          <div className="flex flex-col justify-around items-start border border-black rounded-xl p-2 shadow-xl m-2 h-full">
             <div className="flex  flex-row items-center gap-4">
               <Code className=""/>
               <p>Programming</p>
