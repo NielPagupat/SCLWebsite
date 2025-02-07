@@ -73,7 +73,6 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-
       {/* <div className='flex justify-end'>
             <div className='w-1/3 h-14 clip-trapezoid-reverse bg-gradient-to-tl from-blue-800 to-cyan-100'/>
         </div> */}

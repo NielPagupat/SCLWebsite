@@ -3,7 +3,7 @@ import React from 'react'
 export default function TheTeam() {
     const team = [1,2,3,4]
   return (
-    <div className='flex flex-col items-center mt-10' id='the-team'>
+    <div className='flex flex-col items-center mt-10 bg-PaperBlack m-5 rounded-xl shadow-xl pt-5 pb-5' id='the-team'>
         <div>
             <h1 className='text-4xl font-semibold'>THE SCL TEAM</h1>
         </div>

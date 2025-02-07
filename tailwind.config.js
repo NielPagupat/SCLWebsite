@@ -7,11 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        SCLYellow: '#DDD614',//yellow
-        SCLBlue: '#05F9EF',//blue
-        SCLLightBlue: '##210FF7',//light blue
-        SCLWhite: '##FFFFFF',//white
-        Yellow: '#e3d80b',//yellow
+        SCLYellow: '#fcfab1',//yellow
+        SCLLightBlue: '#05F9EF',//blue
+        SCLBlue: '#0c065c',//light blue
+        SCLWhite: '#FFFFFF',//white
+        PaperBlack: "rgba(189, 187, 188, 0.10)"
       },
 
     },
