@@ -51,7 +51,7 @@ export default function LandingPage() {
             highest level of customer satisfaction through innovative solutions
             and exceptional support.
           </p>
-          <div className="flex items-center justify-start gap-3 m-3 ml-12 w-full text-center text-xl">
+          <div className="flex items-center justify-start gap-5 m-3 ml-12 w-full text-center text-xl">
             <span className="">
               <button
                 className="flex p-2 border border-black rounded-xl"
