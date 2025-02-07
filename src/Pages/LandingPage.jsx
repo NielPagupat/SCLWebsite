@@ -33,17 +33,17 @@ export default function LandingPage() {
       <div className="flex flex-1 flex-col justify-start align-start items-start p-4 ">
         <div className="flex flex-col items-center justify-around p-2 shadow-xl border border-gradient-to-r from-stone-600 to-gray-700 flex-1 bg-PaperBlack">
           <div className="flex flex-col items-center justify-start">
-            <image
-              src=""
+            <img
+              src="./src/assets/backrgounds/SCL ANIMATIONS.gif"
               alt="Logo"
               className="w-32 h-20 border border-black shadow-xl m-3"
             />
-            <span className="text-5xl font-semibold">
+            <span className="text-5xl font-semibold text-SCLBlue">
               Dura Computer Services
             </span>
-            <span className="text-2xl">Software & Hardware Solutions</span>
+            <span className="text-2xl text-SCLBlue">Software & Hardware Solutions</span>
           </div>
-          <p className="text-justify p-4 indent-8 text-xl font-tomorrow">
+          <p className="text-justify p-4 indent-8 text-xl font-tomorrow text-SCLBlue">
             SCL, or Software & Computer Logistics, is a leading provider of
             comprehensive IT solutions. We specialize in delivering top-notch
             software and hardware services tailored to meet the unique needs of
@@ -51,10 +51,10 @@ export default function LandingPage() {
             highest level of customer satisfaction through innovative solutions
             and exceptional support.
           </p>
-          <div className="flex items-center justify-start gap-5 m-3 ml-12 w-full text-center text-xl">
+          <div className="flex items-center justify-start gap-5 m-3 ml-12 w-full text-center text-xl text-SCLYellow">
             <span className="">
               <button
-                className="flex p-2 border border-black rounded-xl gap-2 items-center bg-gradient-to-r from-sky-700 to-blue-900" 
+                className="flex p-2 border w-36 h-16 border-black rounded-xl gap-2 justify-center items-center bg-SCLBlue" 
                 onClick={goToFacebook}
               >
                 Message
@@ -63,7 +63,7 @@ export default function LandingPage() {
             </span>
             <span className="">
               <button
-                className="flex p-2 border border-black rounded-xl gap-2 items-center"
+                className="flex p-2 border w-36 h-16 border-black rounded-xl gap-2 justify-center items-center bg-SCLBlue"
                 onClick={goToMain}
               >
                 About Us
@@ -77,8 +77,13 @@ export default function LandingPage() {
             <div className='w-1/3 h-14 clip-trapezoid-reverse bg-gradient-to-tl from-blue-800 to-cyan-100'/>
         </div> */}
       <div className="flex flex-1 flex-col justify-start align-start items-start p-4">
-        <div className="flex flex-row items-center justify-end p-2 shadow-xl flex-1 w-full text-2xl border border-gradient-to-r from-stone-600 to-gray-700 font-semibold bg-PaperBlack">
-          <div className="flex flex-col justify-around items-start h-full font-tomorrow text-xl">
+        <div className="flex flex-col items-center justify-center p-2 shadow-xl flex-1 w-full text-2xl border border-gradient-to-r from-stone-600 to-gray-700 font-semibold bg-PaperBlack">
+        
+        <div className="flex flex-row justify-center items-center text-3xl  w-full font-tomorrow text-SCLBlue mt-6">
+              <p>SERVICES</p>
+            </div>
+          
+          <div className="flex flex-col justify-around items-start h-full font-tomorrow text-SCLBlue text-xl">
             <div className="flex  flex-row items-center gap-4">
               <Code className="size-9"/>
               <p>SOFTWARE DEVELOPMENT AND PROGRAMMING</p>
