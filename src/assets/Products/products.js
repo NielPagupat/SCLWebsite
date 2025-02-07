@@ -255,5 +255,33 @@ export const allProducts = [
     {
         projectTitle: "Integrated Restaurant Information System (iRIS)",
         projectDescription: "Customed design for every restaurant be it in a fastfood chain type or a fine dine-in scenario. It can be integrated to other sub module like standard Payroll Module with direct to computer Daily Time Recording, Standard Disbursement and Expenses Module, Menu/Stocks Inventory Module.", 
-    }
+        content: [
+            {
+                modulename: "Features",
+                content:[
+                    "Order taking module",
+                    "Table Management",
+                    "Functions management",
+                    "Sales and Order Summary",
+                ]
+            },
+            {
+                modulename: "Inventory Module",
+                content: [
+                    "Receiving Report Entry",
+                    "Adjustment Entry",
+                    "Daily/Periodic Inventory Monitoring",
+                ]
+            },
+            {
+                modulename: "Disbursement and Expenses Module",
+                content: [
+                    "Voucher and Disbursement Entry Form",
+                    "Expenses Monitoring",
+                    "Issuances of Checks",
+                    "Reporting"
+                ]
+            }
+        ]
+    },
 ];
