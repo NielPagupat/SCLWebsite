@@ -17,7 +17,7 @@ return (
             <div className='static'>
                     <div className='w-1/3 h-14 clip-trapezoid bg-gradient-to-br from-blue-800 to-cyan-100' />
             </div>
-            <div className='flex flex-1 justify-start align-start items-start p-4'>
+            <div className='flex flex-1 justify-start items-start p-4'>
                     <div className='flex flex-col items-center border border-black rounded-xl p-2 shadow-xl'>
                             <div className='flex items-center justify-start'>
                                     <span className='text-4xl font-semibold'>Dura Computer Services</span>
