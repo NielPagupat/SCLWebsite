@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        customColor: '#ff5733',
+        SCLYellow: '#DDD614',//yellow
+        SCLBlue: '#05F9EF',//blue
+        SCLLightBlue: '##210FF7',//light blue
+        SCLWhite: '##FFFFFF',//white
       },
 
     },
