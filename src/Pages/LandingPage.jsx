@@ -26,12 +26,12 @@ export default function LandingPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-1 bg-gradient-to-b from-yellow-300 to-yellow-500">
+    <div className="min-h-screen flex flex-1 p-8">
       {/* <div className='static'>
             <div className='w-1/3 h-14 clip-trapezoid bg-gradient-to-br from-blue-800 to-cyan-100' />
         </div>   */}
       <div className="flex flex-1 flex-col justify-start align-start items-start p-4 ">
-        <div className="flex flex-col items-center justify-around border border-black rounded-xl p-2 shadow-xl flex-1">
+        <div className="flex flex-col items-center justify-around p-2 shadow-xl border border-gradient-to-r from-stone-600 to-gray-700 flex-1 bg-PaperBlack">
           <div className="flex flex-col items-center justify-start">
             <image
               src=""
@@ -43,7 +43,7 @@ export default function LandingPage() {
             </span>
             <span className="text-2xl">Software & Hardware Solutions</span>
           </div>
-          <p className="text-justify p-4 indent-8 text-xl">
+          <p className="text-justify p-4 indent-8 text-xl font-tomorrow">
             SCL, or Software & Computer Logistics, is a leading provider of
             comprehensive IT solutions. We specialize in delivering top-notch
             software and hardware services tailored to meet the unique needs of
@@ -54,7 +54,7 @@ export default function LandingPage() {
           <div className="flex items-center justify-start gap-5 m-3 ml-12 w-full text-center text-xl">
             <span className="">
               <button
-                className="flex p-2 border border-black rounded-xl"
+                className="flex p-2 border border-black rounded-xl gap-2 items-center bg-gradient-to-r from-sky-700 to-blue-900" 
                 onClick={goToFacebook}
               >
                 Message
@@ -63,7 +63,7 @@ export default function LandingPage() {
             </span>
             <span className="">
               <button
-                className="flex p-2 border border-black rounded-xl"
+                className="flex p-2 border border-black rounded-xl gap-2 items-center"
                 onClick={goToMain}
               >
                 About Us
@@ -77,39 +77,27 @@ export default function LandingPage() {
             <div className='w-1/3 h-14 clip-trapezoid-reverse bg-gradient-to-tl from-blue-800 to-cyan-100'/>
         </div> */}
       <div className="flex flex-1 flex-col justify-start align-start items-start p-4">
-        <div className="flex flex-row items-center justify-end border border-black rounded-xl p-2 shadow-xl flex-1 w-full text-2xl font-semibold">
-          <div className="flex flex-col justify-around items-start border border-black rounded-xl p-2 shadow-xl m-2 h-full p-7">
+        <div className="flex flex-row items-center justify-end p-2 shadow-xl flex-1 w-full text-2xl border border-gradient-to-r from-stone-600 to-gray-700 font-semibold bg-PaperBlack">
+          <div className="flex flex-col justify-around items-start h-full font-tomorrow text-xl">
             <div className="flex  flex-row items-center gap-4">
-              <Code className=""/>
-              <p>Programming</p>
+              <Code className="size-9"/>
+              <p>SOFTWARE DEVELOPMENT AND PROGRAMMING</p>
             </div>
             <div className="flex  flex-row items-center gap-4">
-              <Monitor />
-              <p>Web Development</p>
+              <Monitor className="size-9"/>
+              <p>HARWARE AND ICT EQUIPMENT</p>
             </div>
             <div className="flex  flex-row items-center gap-4">
-              <Smartphone />
-              <p>Mobile Development</p>
+              <Network className="size-9"/>
+              <p>STRUCTURED CABLING AND SURVILLANCE</p>
             </div>
             <div className="flex  flex-row items-center gap-4">
-              <Cpu />
-              <p>Repair & Maintenance</p>
+              <Cpu className="size-9"/>
+              <p>SERVICES REPAIR AND MAINTAINANCE</p>
             </div>
             <div className="flex  flex-row items-center gap-4">
-              <Cctv />
-              <p>CCTV & Monitoring</p>
-            </div>
-            <div className="flex  flex-row items-center gap-4">
-              <MessageSquareMore />
-              <p>ICT Consultancy</p>
-            </div>
-            <div className="flex  flex-row items-center gap-4">
-              <Network />
-              <p>Cabling & Networking</p>
-            </div>
-            <div className="flex  flex-row items-center gap-4">
-              <Database />
-              <p>System Integration</p>
+              <Cctv className="size-9"/>
+              <p>ICT CONSULTANCY AND COLLABORATION</p>
             </div>
           </div>
         </div>

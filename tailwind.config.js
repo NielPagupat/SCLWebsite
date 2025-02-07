@@ -13,7 +13,9 @@ export default {
         SCLWhite: '#FFFFFF',//white
         PaperBlack: "rgba(189, 187, 188, 0.10)"
       },
-
+      fontFamily:{
+        tomorrow: ['Tomorrow', 'sans-serif'],
+      }
     },
   },
   plugins: [],
