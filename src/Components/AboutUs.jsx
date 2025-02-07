@@ -6,7 +6,7 @@ export default function AboutUs() {
     const services = [1, 2, 3, 4]
   return (
     <div id='about-us'>
-        <div className='flex'>
+        <div className='flex bg-'>
             <div className='p-5'>
                 <img src="" alt="Logo" className='size-96 border border-black shadow-xl'/>                
             </div>
