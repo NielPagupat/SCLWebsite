@@ -6,11 +6,11 @@ import TheTeam from './TheTeam'
 
 export default function MainPageContent() {
   return (
-    <>
+    <div className=''>
         <AboutUs />
         <ProductPortfolio />
         <Experience />
         <TheTeam />
-    </>
+    </div>
   )
 }
