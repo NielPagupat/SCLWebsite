@@ -27,21 +27,18 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen flex flex-1 p-8">
-      {/* <div className='static'>
-            <div className='w-1/3 h-14 clip-trapezoid bg-gradient-to-br from-blue-800 to-cyan-100' />
-        </div>   */}
       <div className="flex flex-1 flex-col justify-start align-start items-start p-4 ">
         <div className="flex flex-col items-center justify-around p-2 shadow-xl border border-gradient-to-r from-stone-600 to-gray-700 flex-1 bg-PaperBlack">
-          <div className="flex flex-col items-center justify-start">
+          <div className="flex flex-col items-center justify-center">
             <img
               src="./src/assets/backrgounds/SCL ANIMATIONS.gif"
               alt="Logo"
               className="w-32 h-20 border border-black shadow-xl m-3"
             />
-            <span className="text-5xl font-semibold text-SCLBlue">
+            <span className="text-5xl font-semibold text-SCLBlue font-tomorrow">
               Dura Computer Services
             </span>
-            <span className="text-2xl text-SCLBlue">Software & Hardware Solutions</span>
+            <span className="text-2xl text-SCLBlue font-tomorrow">Software & Hardware Solutions</span>
           </div>
           <p className="text-justify p-4 indent-8 text-xl font-tomorrow text-SCLBlue">
             SCL, or Software & Computer Logistics, is a leading provider of
@@ -54,7 +51,7 @@ export default function LandingPage() {
           <div className="flex items-center justify-start gap-5 m-3 ml-12 w-full text-center text-xl text-SCLYellow">
             <span className="">
               <button
-                className="flex p-2 border w-36 h-16 border-black rounded-xl gap-2 justify-center items-center bg-SCLBlue" 
+                className="flex p-2 border w-36 h-16 border-black rounded-xl gap-2 justify-center items-center bg-SCLBlue transition duration-300 ease-in-out transform hover:scale-105"
                 onClick={goToFacebook}
               >
                 Message
@@ -63,8 +60,20 @@ export default function LandingPage() {
             </span>
             <span className="">
               <button
-                className="flex p-2 border w-36 h-16 border-black rounded-xl gap-2 justify-center items-center bg-SCLBlue"
-                onClick={goToMain}
+                className="flex p-2 border w-36 h-16 border-black rounded-xl gap-2 justify-center items-center bg-SCLBlue transition duration-300 ease-in-out transform hover:scale-105"
+                onClick={() => {
+                  document.querySelector('.loading-screen').style.display = 'flex';
+                  document.querySelector('.loading-screen').classList.add('fade-in');
+                  setTimeout(() => {
+                    document.querySelector('.loading-screen').classList.remove('fade-in');
+                    document.querySelector('.loading-screen').classList.add('fade-out');
+                    setTimeout(() => {
+                      document.querySelector('.loading-screen').style.display = 'none';
+                      document.querySelector('.loading-screen').classList.remove('fade-out');
+                      goToMain();
+                    }, 100); // Adjust the timeout as needed
+                  }, 1000); // Adjust the timeout as needed
+                }}
               >
                 About Us
                 <ChevronRight />
@@ -73,9 +82,9 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      {/* <div className='flex justify-end'>
-            <div className='w-1/3 h-14 clip-trapezoid-reverse bg-gradient-to-tl from-blue-800 to-cyan-100'/>
-        </div> */}
+      <div className="loading-screen fixed inset-0 flex items-center justify-center size-full" style={{ display: 'none' }}>
+        <img src="./src/assets/backrgounds/SCL ANIMATIONS.gif" alt="Loading" className="w-32 h-32" />
+      </div>
       <div className="flex flex-1 flex-col justify-start align-start items-start p-4">
         <div className="flex flex-col items-center justify-center p-2 shadow-xl flex-1 w-full text-2xl border border-gradient-to-r from-stone-600 to-gray-700 font-semibold bg-PaperBlack">
         
