@@ -83,7 +83,7 @@ export default function Navigation() {
             onMouseEnter={() => setIsDropdownOpen(true)} 
           >
             <button 
-              className='mr-10 p-3 flex items-center gap-2 text-white font-semibold' 
+              className='mr-10 p-3 flex items-center gap-2 text-Font font-semibold' 
             >
               About Us {isDropdownOpen?<ChevronUp className="w-4 h-4" />:<ChevronDown className="w-4 h-4" />}
               
@@ -97,8 +97,8 @@ export default function Navigation() {
               </div>
             )}
           </div>
-          <button className='mr-10 p-3 text-white font-semibold' onClick={goToProductsPortfolio}>Product Portfolio</button>
-          <button className='mr-10 p-3 text-white font-semibold' onClick={goToExperience}>Experiences</button>
+          <button className='mr-10 p-3 text-Font font-semibold' onClick={goToProductsPortfolio}>Product Portfolio</button>
+          <button className='mr-10 p-3 text-Font font-semibold' onClick={goToExperience}>Experiences</button>
         </div> : 
         location.pathname === "/SCL/Products" || matchProduct?
           <div className='flex items-center'>

@@ -23,7 +23,7 @@ export default function AboutUs() {
         </div>
         <div className='bg-PaperBlack border border-amber-400 m-5 rounded-xl shadow-xl text-Font'>
             <div className='flex flex-col justify-center items-center mt-10 p-3'>
-                <div className='flex justify-center items-center border border-amber-400 rounded-lg bg-SCLLightBlue size-12 w-24'>
+                <div className='flex justify-center items-center border border-amber-400 rounded-lg bg-gradient-to-r from-sky-900 to-violet-400 size-12 w-24'>
                     <h1 className='text-2xl font-semibold font-tomorrow'>Values</h1>
                 </div>
                 <h3 className='text-xl font-tomorrow'>SCL Values the triple E's</h3>
@@ -35,13 +35,13 @@ export default function AboutUs() {
             </div>
             <div className='flex pb-10'>
                 <div className='flex flex-col flex-1 p-5 items-center rounded-r-xl'>
-                   <div className='flex justify-center items-center border border-amber-400 rounded-lg bg-SCLLightBlue size-12 w-28'>
+                   <div className='flex justify-center items-center border border-amber-400 rounded-lg bg-gradient-to-r from-sky-900 to-violet-400 size-12 w-28'>
                     <h1 className='text-2xl font-semibold font-tomorrow'>Mission</h1>
                 </div>
                     <p className='text-center w-2/3 font-tomorrow text-lg mt-5'>{Mission}</p>
                 </div>
                 <div className='flex flex-col flex-1 p-5 items-center'>
-                <div className='flex justify-center items-center border border-amber-400 rounded-lg bg-SCLLightBlue size-12 w-24'>
+                <div className='flex justify-center items-center border border-amber-400 rounded-lg bg-gradient-to-r from-sky-900 to-violet-400 size-12 w-24'>
                     <h1 className='text-2xl font-semibold font-tomorrow'>Vision</h1>
                 </div>
                     <p className='text-center w-2/3 font-tomorrow text-lg mt-5'>{Vision}</p>
