@@ -29,7 +29,7 @@ export default function ProductPortfolio() {
     };
 
     return (
-        <div className="flex flex-col mt-10 mr-0 rounded-xl shadow-xl items-end border border-amber-400 bg-PaperBlack" id="products-portfolio">
+        <div className="flex flex-col mt-10 m-5 rounded-xl shadow-xl items-end border border-amber-400 bg-PaperBlack" id="products-portfolio">
             <div className="flex w-full justify-start p-5 font-tomorrow flex-col">
                 <h1 className="font-semibold text-4xl text-Font mb-2">Product Portfolio</h1>
                 <span className='border-b w-40 border-2 border-SCLBlue'></span>
