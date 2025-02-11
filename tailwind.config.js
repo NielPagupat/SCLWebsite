@@ -14,7 +14,8 @@ export default {
         PaperBlack: "rgba(78, 110, 88, 0.10)",
         Font : '#0c065c',
         Border: '#88cda5',
-        lightgreen: '#57b07f'
+        lightgreen: '#57b07f',
+        Nav: '#37d085'
       },
       fontFamily:{
         tomorrow: ['Tomorrow', 'sans-serif'],
