@@ -11,7 +11,7 @@ export default {
         SCLLightBlue: '#05F9EF',//blue
         SCLBlue: '#0c065c',//light blue
         SCLWhite: '#FFFFFF',//white
-        PaperBlack: "rgba(189, 187, 188, 0.10)"
+        PaperBlack: "rgba(78, 110, 88, 0.10)"
       },
       fontFamily:{
         tomorrow: ['Tomorrow', 'sans-serif'],

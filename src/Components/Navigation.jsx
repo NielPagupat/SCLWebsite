@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { ChevronDown, ChevronLeft, ChevronUp } from "lucide-react";
-import { useLocation, useNavigate } from 'react-router';
+import { useLocation, useMatch, useNavigate } from 'react-router';
 
 export default function Navigation() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
   const location = useLocation();
   const navigate = useNavigate();
+  const matchProduct = useMatch("/SCL/Products/prod/:prod");
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -99,7 +100,7 @@ export default function Navigation() {
           <button className='mr-10 p-3 text-white font-semibold' onClick={goToProductsPortfolio}>Product Portfolio</button>
           <button className='mr-10 p-3 text-white font-semibold' onClick={goToExperience}>Experiences</button>
         </div> : 
-        location.pathname === "/SCL/Products"?
+        location.pathname === "/SCL/Products" || matchProduct?
           <div className='flex items-center'>
             <button onClick={back} className='text-white font-semibold'><ChevronLeft/></button>
             <h1 className='font-semibold mr-10 p-3 text-white'>Products</h1>

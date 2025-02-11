@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 body {
-    background-color: #fff930;
-    background-image: url( '../src/assets/backrgounds/bg.svg' );;
+    background-color: #fcfab1;
+    background-image: url( '../src/assets/backgrounds/bg.svg' );
 }
 
 /* width */

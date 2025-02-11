@@ -4,7 +4,8 @@ export const allProducts = [
   {
     projectTitle: "Cooperative Management Information System (CMIS)",
     projectDescription:
-      "A customize cooperative management system designed for stand alone or integrated modules. Its purpose is to help the end users manage to effectively and efficiently. Reduce the multiple recording and faster report consolidation in the aspect of Financial, Goods, and Services including other allied areas.",
+      "A customize cooperative management system designed for stand alone or integrated modules. Its purpose is to help the end users manage to effectively and efficiently. Reduce the multiple recording and faster report consolidation in the aspect of Financial, Goods, and Services including other allied areas.",      
+    icon : '../src/assets/Icons/CMIS.webp',
     modules: [
       {
         modulename: "Membership Management Module",
@@ -152,6 +153,7 @@ export const allProducts = [
     projectTitle: "Integrated Office Automation System (iOAS)",
     projectDescription:
       "A customized office management system designed for stand alone or integrated modules. Its purpose is to help the end users to manage effectively and efficiently. Reduce the multiple recording and faster report consolidation in the aspect of Financial, Goods and Services including other allied areas.",
+    icon:"../src/assets/Icons/iOAS.webp",
     modules: [
       {
         modulename: "Integrated Accounting System",
@@ -257,7 +259,8 @@ export const allProducts = [
     projectTitle: "Integrated Restaurant Information System (iRIS)",
     projectDescription:
       "Customed design for every restaurant be it in a fastfood chain type or a fine dine-in scenario. It can be integrated to other sub module like standard Payroll Module with direct to computer Daily Time Recording, Standard Disbursement and Expenses Module, Menu/Stocks Inventory Module.",
-    content: [
+    icon:"../src/assets/Icons/iRIS.webp",
+    modules: [
       {
         modulename: "Features",
         content: [
@@ -288,8 +291,9 @@ export const allProducts = [
   },
   {
     projectTitle: "Fleet Management and Dispatching Control System (eFMDSys)",
-    projectDscription:
+    projectDescription:
       "Designed to help the Department of Agriculture's General Suport Services Department(GSS). This include Vehicle Trip and Scheduling Management and Monitoring. With its sub module includes Vehicle and Driver Profiling and Fleet/Vehicle Repair and Preventive Maintenance",
+    icon:"../src/assets/Icons/eFMDSys.webp",
     modules: [
       {
         modulename: "Features",
@@ -335,10 +339,11 @@ export const allProducts = [
   },
   {
     projectTitle: "Integrated Payroll Information System (iPIS)",
-    projectDscription: [
+    projectDescription: [
       "Designed to cater to the demands of more than ten thousand (10,000) employees. This includes the first step of Payroll Computations, Daily Time Recording, Rate Set-up, Mandatory Deductions, Loans up to Printing of Individual PaySlip as well as Bank Transmittal Report.",
       "It is a mixed platform interface, web-based and desktop application for a more robust, reliable, and scalable system.",
     ],
+    icon:"../src/assets/Icons/iPIS.webp",
     modules: [
       {
         modulename: "Features",
@@ -386,29 +391,30 @@ export const allProducts = [
   },
   {
     projectTitle: "Procurement Document Filing System (PDFSys)",
-    projectDscription:
+    projectDescription:
       "Designed to ease the Procurement Documents and other related documents of Department of Agricultures Bids and Awards Committee (BAC A1, A2, and A3). With the scanned - electronic copy of all the documents in every Procurement Transactions this can help the end user work efficiency and daily throughput.",
+    icon:"../src/assets/Icons/PDFSys.webp",
     modules: [
       {
         modulename: "Features",
         content: [
           "Entry of Documentary Requirement",
+          "Mode of Procurement",
+          "Document Type",
+          "Supplier List",
           {
             subcontent: [
               {
-                name: "By Mode of Procurement",
-                options: [
+                contentName: "By Mode of Procurement",
+                sub: [
                   "Alternative Mode of Procurement (AMP)",
                   "National Competitive Bidding (NCB)",
                 ],
               },
               {
-                name: "By Type",
-                options: ["INFRA", "GOODS", "SERVICES", "CONSULTANCY"],
+                contentName: "By Type",
+                sub: ["INFRA", "GOODS", "SERVICES", "CONSULTANCY"],
               },
-              "Mode of Procurement",
-              "Document Type",
-              "Supplier List",
             ],
           },
         ],
@@ -432,11 +438,12 @@ export const allProducts = [
   },
   {
     projectTitle: "ELECTRONIC PROPERTY INVENTORY SYSTEM (ePinSys)",
-    projectDscription: [
+    projectDescription: [
       "Designed to give ease and solve the complexity of monitoring, tracking all the organizations Property, Plant and Equipment. Its key features include Unique Asset/Property Number Assignment, Direct Sticker Printing of Asset Number, Straight Depreciation Computation and Net Book Value and Standard to Custom made Monitoring and Reporting.",
       "Its Report Print out and forms are based on the latest Government Accounting Form (GAM). The systems Interface and processes designed and consolidated according to different end users. It has a third party module using mobile devices for convenient Yearly Physical Count Inventory intended for multiple areas and office sites.",
       "The module also includes the Archiving of Asset for Expired Items and Gate Pass Entry and Issuance.",
     ],
+    icon:"../src/assets/Icons/ePinSys.webp",
     modules: [
       {
         modulename: "feature",
@@ -496,11 +503,12 @@ export const allProducts = [
   },
   {
     projectTitle: "ELECTRONIC PROCUREMENT SYSTEM (eProcSys)",
-    projectDscription: [
+    projectDescription: [
       "Customized design in order to meet the demand and processes of the Philippine Republic Act R.A. 9184, known as 'An Act Providing for the Modernization, Standardization and Regulation of the Procurement Activities of the Government and for other Purposes,' otherwise known as the Government Procurement Reform Act.",
       "Its report printouts and forms are based on the latest Government Accounting Form (GAM). The system's interface and processes are designed according to the flow of procurement (specifically for the Department of Agriculture), aiming to minimize the multiple encoding of PPMP, consolidation of APP reports, uniform item costing and pricing, procurement monitoring, APCPI requirements, and reports.",
       "The module also includes inventory monitoring of office supplies and materials, covering issuance, monitoring, and its equivalent reports. Additionally, it provides templates for forms such as Disbursement Voucher, Obligation Request, and BURS Form.",
     ],
+    icon:"../src/assets/Icons/eProcSys.webp",
     modules: [
       {
         modulename: "Features",
@@ -565,9 +573,8 @@ export const allProducts = [
   },
   {
     projectTitle: "Integrated Inventory-Warehousing and Sale System (iIWSS)",
-    projectDscription: [
-      "Designed to monitor stocks receiving and issuances/sales. It can run on an integrated or stand-alone module. Customized reporting for Sales, Inventory, and Stocks Demographic.",
-    ],
+    projectDescription: "Designed to monitor stocks receiving and issuances/sales. It can run on an integrated or stand-alone module. Customized reporting for Sales, Inventory, and Stocks Demographic.",
+    icon:"../src/assets/Icons/iIWSS.webp",
     modules: [
       {
         modulename: "Features",
@@ -582,7 +589,7 @@ export const allProducts = [
           {
             subcontent: [
               {
-                contentname: "Reporting",
+                contentName: "Reporting",
                 sub: [
                   "Ending Inventory Count",
                   "Re-Order Level Product Report",
@@ -601,7 +608,7 @@ export const allProducts = [
           {
             subcontent: [
               {
-                contentname: "Reporting",
+                contentName: "Reporting",
                 sub: [
                   "Sales Summary Report",
                   "Per Product Category Sales Report",
@@ -650,4 +657,53 @@ export const allProducts = [
       },
     ],
   },
+  // {
+  //   New Projects Here
+  // }
 ];
+
+// Template
+
+// {
+//   projectTitle: "",
+//   projectDescription: [
+//     "",
+//     "",
+//   ],
+//   modules: [
+//     {
+//       modulename: "module 1",
+//       content: [
+//         "module content 1",
+//         "module content 2",
+//         "module content 3",
+//         {
+//           subcontent: [
+//             {
+//               contentName: "module content 4 a module with sub content",
+//               sub: [
+//                 "module sub content 1",
+//                 "module sub content 2",
+//               ],
+//             },
+//             {
+//               contentName: "module content 5 a module with sub content",
+//               sub: [
+//                 "module sub content 1",
+//                 "module sub content 2",
+//               ],
+//             },
+//           ],
+//         },
+//       ],
+//     },
+//     {
+//       modulename: "module 2",
+//       content: [
+//         "content 1",
+//         "content 2",
+//         "content 3",
+//       ],
+//     },
+//   ],
+// },
