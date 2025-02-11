@@ -3,18 +3,20 @@ import { aboutUs, Mission, Vision } from '../assets/Text/text'
 
 
 export default function AboutUs() {
-    const services = ['SOFTWARE DEVELOPMENT AND PROGRAMMING',
-                      'HARWARE AND ICT EQUIPMENT',
-                      'STRUCTURED CABLING AND SURVILLANCE',
-                      'SERVICES REPAIR AND MAINTAINANCE',
-                      'ICT CONSULTANCY AND COLLABORATION']
+    const services = [
+        { name: 'SOFTWARE DEVELOPMENT AND PROGRAMMING', icon: "../src/assets/Icons/Service1.webp" },
+        { name: 'HARDWARE AND ICT EQUIPMENT', icon: "../src/assets/Icons/Service2.webp" },
+        { name: 'STRUCTURED CABLING AND SURVEILLANCE', icon: "../src/assets/Icons/Service3.webp" },
+        { name: 'SERVICES REPAIR AND MAINTENANCE', icon: "../src/assets/Icons/Service4.webp" },
+        { name: 'ICT CONSULTANCY AND COLLABORATION', icon: "../src/assets/Icons/Service5.webp" }
+    ]
   return (
     <div id='about-us'>
         <div className='flex'>
             <div className='p-5'>
-                <img src="./src/assets/backrgounds/SCL ANIMATIONS.gif" alt="Logo" className='   '/>                
+                <img src="../src/assets/Images/SCL_Cover.jpg" alt="Logo" className='rounded-xl border border-black shadow-xl'/>                
             </div>
-            <div className='p-5 border border-amber-400 bg-PaperBlack m-5 rounded-lg shadow-xl'>
+            <div className='flex-1 p-5 border border-amber-400 bg-PaperBlack m-5 ml-0 rounded-lg shadow-xl'>
                 <h1 className='text-4xl font-semibold font-tomorrow text-Font'>About Us</h1>
                 <p className='mt-5 font-tomorrow text-lg text-Font '>{aboutUs}</p>
             </div>
@@ -31,7 +33,7 @@ export default function AboutUs() {
                     <li className='my-5 font-semibold'>Excellent Support and Service</li>
                 </ul>
             </div>
-            <div className='flex '>
+            <div className='flex pb-10'>
                 <div className='flex flex-col flex-1 p-5 items-center rounded-r-xl'>
                    <div className='flex justify-center items-center border border-amber-400 rounded-lg bg-gradient-to-r from-sky-900 to-violet-400 size-12 w-28'>
                     <h1 className='text-2xl font-semibold font-tomorrow'>Mission</h1>
@@ -48,12 +50,12 @@ export default function AboutUs() {
         </div>   
         <div className='flex flex-col items-center mt-10 pt-5 pb-5 bg-PaperBlack border border-amber-400 m-5 rounded-xl shadow-xl text-Font font-tomorrow'>
             <h1 className='text-4xl font-semibold mb-10'>Services Offered</h1>
-            <div className='grid grid-cols-3 justify-center'>
+            <div className='flex flex-wrap justify-center'>
                 {
                     services.map((val, index) => 
-                        <div key={index} className={`flex flex-col items-center m-2`}>
-                            <img src="" alt="service" className='size-80 border border-black rounded-md shadow-xl' />
-                            <p className='font-semibold '>{val}</p>
+                        <div key={index} className={`flex flex-col items-center m-5`}>
+                            <img src={val.icon} alt="service" className='size-80 border border-black rounded-md shadow-xl' />
+                            <p className='font-semibold mt-2'>{val.name}</p>
                         </div>
                     )
                 }

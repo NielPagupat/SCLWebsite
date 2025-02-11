@@ -71,9 +71,9 @@ export default function Navigation() {
   }
 
   return (
-    <div className='sticky top-0 flex min-w-screen justify-between p-3 drop-shadow-xl bg-gradient-to-r from-sky-900 to-violet-400 font-tomorrow rounded-b-2xl'>
+    <div className='sticky top-0 flex min-w-screen justify-between p-3 drop-shadow-xl bg-gradient-to-r from-SCLBlue to-cyan-400 font-tomorrow rounded-b-2xl'>
       <div className='flex-1'>
-        <img src="" alt="Logo" onClick={backToBanner} className='border size-14'/>
+        <img src="../src/assets/Icons/SCL_Logo.jpg" alt="Logo" onClick={backToBanner} className='border h-11 rounded-2xl hover:cursor-pointer hover:scale-105 hover:shadow-lg active:scale-95'/>
       </div>
       {location.pathname === '/SCL'?
         <div className='flex flex-1 justify-end items-center'>

@@ -11,8 +11,8 @@ export default {
         SCLLightBlue: '#05F9EF',//blue
         SCLBlue: '#0c065c',//light blue
         SCLWhite: '#FFFFFF',//white
-        PaperBlack: "rgba(78, 110, 88, 0.10)",
-        Font : '#000000',
+        PaperBlack: "rgba(229, 202, 0, .50)",
+        Font : '#0c065c',
         Border: '#88cda5',
         lightgreen: '#57b07f',
         Nav: '#37d085'
