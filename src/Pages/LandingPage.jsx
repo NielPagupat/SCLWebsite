@@ -48,10 +48,10 @@ export default function LandingPage() {
             highest level of customer satisfaction through innovative solutions
             and exceptional support.
           </p>
-          <div className="flex items-center justify-start gap-5 m-3 ml-12 w-full text-center font-tomorrow text-xl text-SCLYellow">
+          <div className="flex items-center justify-start gap-5 m-3 ml-12 w-full text-center font-tomorrow text-xl text-white">
             <span className="">
               <button
-                className="flex p-2 border w-36 h-16 border-black rounded-xl gap-2 justify-center items-center bg-SCLBlue transition duration-300 ease-in-out transform hover:scale-105"
+                className="flex p-2 border w-36 h-16 border-black rounded-xl gap-2 justify-center items-center bg-SCLBlue transition duration-400 ease-in-out transform hover:scale-110"
                 onClick={goToFacebook}
               >
                 Message
@@ -60,7 +60,7 @@ export default function LandingPage() {
             </span>
             <span className="">
               <button
-                className="flex p-2 border w-36 h-16 border-black rounded-xl gap-2 justify-center items-center font-tomorrow bg-SCLBlue transition duration-300 ease-in-out transform hover:scale-105"
+                className="flex p-2 border w-36 h-16 border-black rounded-xl gap-2 justify-center items-center font-tomorrow bg-SCLBlue transition duration-400 ease-in-out transform hover:scale-110"
                 onClick={() => {
                   document.querySelector('.loading-screen').style.display = 'flex';
                   document.querySelector('.loading-screen').classList.add('fade-in');
