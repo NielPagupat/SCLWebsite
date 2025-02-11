@@ -11,7 +11,7 @@ export default function Footer() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div 
-      className="fixed bottom-0 w-full flex p-4 border-t border-gray-200 shadow-2xl bg-SCLBlue font-tomorrow"
+      className="fixed bottom-0 w-full flex p-4 border-t border-gray-200 shadow-2xl rounded-t-2xl bg-SCLBlue font-tomorrow"
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >

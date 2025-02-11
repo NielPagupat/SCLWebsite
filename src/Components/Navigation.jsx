@@ -71,7 +71,7 @@ export default function Navigation() {
   }
 
   return (
-    <div className='sticky top-0 flex min-w-screen justify-between p-3 drop-shadow-xl bg-SCLBlue font-tomorrow'>
+    <div className='sticky top-0 flex min-w-screen justify-between p-3 drop-shadow-xl bg-SCLBlue font-tomorrow rounded-b-2xl'>
       <div className='flex-1'>
         <img src="" alt="Logo" onClick={backToBanner} className='border size-14'/>
       </div>

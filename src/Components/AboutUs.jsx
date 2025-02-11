@@ -12,7 +12,7 @@ export default function AboutUs() {
     <div id='about-us'>
         <div className='flex'>
             <div className='p-5'>
-                <img src="./src/assets/backrgounds/SCL ANIMATIONS.gif" alt="Logo" className='size-96 border border-black shadow-xl  w-screen'/>                
+                <img src="./src/assets/backgrounds/SCL ANIMATIONS.gif" alt="Logo" className='size-96 border border-black shadow-xl w-screen'/>                
             </div>
             <div className='p-5 border border-amber-400 bg-PaperBlack m-5 rounded-lg shadow-xl'>
                 <h1 className='text-4xl font-semibold font-tomorrow text-Font'>About Us</h1>
