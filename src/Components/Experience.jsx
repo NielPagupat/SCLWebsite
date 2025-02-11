@@ -44,9 +44,9 @@ export default function Experience() {
                 </div>)
                 
             }
-            <button className='flex mr-5 h-24 size-16 w-96 justify-center items-center ' onClick={goToExp}>
+            <button className='flex mr-5 h-24 justify-center items-center ' onClick={goToExp}>
                 <span>
-                    <ChevronRightCircleIcon className='size-12 text-black ml-5 hover:scale-110 hover:text-SCLBlue transition duration-300 ease-in-out '/>
+                    <ChevronRightCircleIcon className='size-12 text-black hover:scale-110 hover:text-SCLBlue transition duration-300 ease-in-out '/>
                 </span>
             </button>
         </div>
