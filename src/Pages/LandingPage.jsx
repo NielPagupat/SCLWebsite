@@ -28,7 +28,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen flex flex-1 p-8">
       <div className="flex flex-1 flex-col justify-start align-start items-start p-4 ">
-        <div className="flex flex-col items-center justify-around p-2 shadow-xl border border-gradient-to-r from-stone-600 to-gray-700 flex-1 bg-PaperBlack">
+        <div className="flex flex-col items-center justify-around p-2 shadow-xl  border border-amber-500 flex-1 bg-PaperBlack">
           <div className="flex flex-col items-center justify-center">
             <img
               src="./src/assets/backrgounds/SCL ANIMATIONS.gif"
@@ -48,7 +48,7 @@ export default function LandingPage() {
             highest level of customer satisfaction through innovative solutions
             and exceptional support.
           </p>
-          <div className="flex items-center justify-start gap-5 m-3 ml-12 w-full text-center text-xl text-SCLYellow">
+          <div className="flex items-center justify-start gap-5 m-3 ml-12 w-full text-center font-tomorrow text-xl text-SCLYellow">
             <span className="">
               <button
                 className="flex p-2 border w-36 h-16 border-black rounded-xl gap-2 justify-center items-center bg-SCLBlue transition duration-300 ease-in-out transform hover:scale-105"
@@ -60,7 +60,7 @@ export default function LandingPage() {
             </span>
             <span className="">
               <button
-                className="flex p-2 border w-36 h-16 border-black rounded-xl gap-2 justify-center items-center bg-SCLBlue transition duration-300 ease-in-out transform hover:scale-105"
+                className="flex p-2 border w-36 h-16 border-black rounded-xl gap-2 justify-center items-center font-tomorrow bg-SCLBlue transition duration-300 ease-in-out transform hover:scale-105"
                 onClick={() => {
                   document.querySelector('.loading-screen').style.display = 'flex';
                   document.querySelector('.loading-screen').classList.add('fade-in');
@@ -86,7 +86,7 @@ export default function LandingPage() {
         <img src="./src/assets/backrgounds/SCL ANIMATIONS.gif" alt="Loading" className="w-32 h-32" />
       </div>
       <div className="flex flex-1 flex-col justify-start align-start items-start p-4">
-        <div className="flex flex-col items-center justify-center p-2 shadow-xl flex-1 w-full text-2xl border border-gradient-to-r from-stone-600 to-gray-700 font-semibold bg-PaperBlack">
+        <div className="flex flex-col items-center justify-center p-2 shadow-xl flex-1 w-full text-2xl border border-amber-400 font-semibold bg-PaperBlack">
         
         <div className="flex flex-row justify-center items-center text-3xl  w-full font-tomorrow text-SCLBlue mt-6">
               <p>SERVICES</p>
