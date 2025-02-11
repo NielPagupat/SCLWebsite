@@ -33,7 +33,7 @@ export default function AboutUs() {
                     <li className='my-5 font-semibold'>Excellent Support and Service</li>
                 </ul>
             </div>
-            <div className='flex '>
+            <div className='flex pb-10'>
                 <div className='flex flex-col flex-1 p-5 items-center rounded-r-xl'>
                    <div className='flex justify-center items-center border border-amber-400 rounded-lg bg-SCLLightBlue size-12 w-28'>
                     <h1 className='text-2xl font-semibold font-tomorrow'>Mission</h1>

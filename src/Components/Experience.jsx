@@ -4,7 +4,7 @@ import{ CircleEllipsis, ChevronRightCircleIcon } from "lucide-react";
 
 
 export default function Experience() {
-    const content = [1,2,3,4,5,6,7]
+    const content = [1,2,3,4,5]
     const navigate = useNavigate()
     const scrollRef = useRef(null);
 
@@ -29,16 +29,12 @@ export default function Experience() {
     };
 
   return (
-    <div className='flex flex-col mt-10 items-end border border-amber-400 bg-PaperBlack m-5 mr-0 rounded-xl shadow-xl' id='experience'>
+    <div className='flex flex-col mt-10 mr-0 rounded-xl shadow-xl items-end border border-amber-400 bg-PaperBlack' id='experience'>
         <div className='flex w-full justify-start p-5 flex-col'>
             <h1 className='font-semibold text-4xl font-tomorrow text-Font mb-2'>Experience</h1>
             <span className='border-b w-40 border-2 border-SCLBlue'></span>
         </div>
-        <div className='flex border border-black  bg-PaperBlack shadow-xl m-5 ml-16 mr-0 rounded-tl-3xl p-5 w-11/12 overflow-x-scroll items-center'
-             ref={scrollRef}
-             onWheel={handleScroll} // Horizontal scroll
-             onMouseEnter={disablePageScroll} // Stop page scrolling
-             onMouseLeave={enablePageScroll} // Re-enable page scrolling
+        <div className='flex border border-black  bg-PaperBlack shadow-xl m-5 ml-16 mr-0 rounded-tl-3xl p-5 w-11/12 items-center'
         >  
             {
                 content.map((con) =>  
@@ -50,7 +46,7 @@ export default function Experience() {
             }
             <button className='flex mr-5 h-24 size-16 w-96 justify-center items-center ' onClick={goToExp}>
                 <span>
-                    <ChevronRightCircleIcon className='size-12 text-black ml-5 transition duration-300 ease-in-out transform hover:scale-110'/>
+                    <ChevronRightCircleIcon className='size-12 text-black ml-5 hover:scale-110 hover:text-SCLBlue transition duration-300 ease-in-out '/>
                 </span>
             </button>
         </div>
