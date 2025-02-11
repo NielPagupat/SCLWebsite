@@ -71,7 +71,7 @@ export default function Navigation() {
   }
 
   return (
-    <div className='sticky top-0 flex min-w-screen justify-between p-3 drop-shadow-xl bg-gradient-to-r from-emerald-400 to-cyan-400 font-tomorrow rounded-b-2xl'>
+    <div className='sticky top-0 flex min-w-screen justify-between p-3 drop-shadow-xl bg-gradient-to-r from-sky-900 to-violet-400 font-tomorrow rounded-b-2xl'>
       <div className='flex-1'>
         <img src="" alt="Logo" onClick={backToBanner} className='border size-14'/>
       </div>
@@ -83,7 +83,7 @@ export default function Navigation() {
             onMouseEnter={() => setIsDropdownOpen(true)} 
           >
             <button 
-              className='mr-10 p-3 flex items-center gap-2 text-white font-semibold' 
+              className='mr-10 p-3 flex items-center gap-2 text-Font font-semibold' 
             >
               About Us {isDropdownOpen?<ChevronUp className="w-4 h-4" />:<ChevronDown className="w-4 h-4" />}
               
@@ -97,8 +97,8 @@ export default function Navigation() {
               </div>
             )}
           </div>
-          <button className='mr-10 p-3 text-white font-semibold' onClick={goToProductsPortfolio}>Product Portfolio</button>
-          <button className='mr-10 p-3 text-white font-semibold' onClick={goToExperience}>Experiences</button>
+          <button className='mr-10 p-3 text-Font font-semibold' onClick={goToProductsPortfolio}>Product Portfolio</button>
+          <button className='mr-10 p-3 text-Font font-semibold' onClick={goToExperience}>Experiences</button>
         </div> : 
         location.pathname === "/SCL/Products" || matchProduct?
           <div className='flex items-center'>
