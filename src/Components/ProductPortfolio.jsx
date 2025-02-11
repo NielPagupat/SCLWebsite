@@ -47,7 +47,7 @@ export default function ProductPortfolio() {
                 ))}
                 <button className=' flex mb-16 justify-center items-center self-center' onClick={goToProdAll}>
                     <span>
-                        <ChevronRightCircleIcon className='size-12 text-black transition duration-300 ease-in-out transform hover:scale-110'/>
+                        <ChevronRightCircleIcon className='size-12 text-black transition duration-300 ease-in-out transform hover:scale-110 hover:text-SCLBlue'/>
                     </span>
                 </button>
                

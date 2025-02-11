@@ -21,7 +21,7 @@ export default function ProductIndividual() {
             <h2 className='text-2xl font-semibold'>Modules Included</h2>
             <div className='grid grid-cols-3'>
                 {item.modules.map((module, index) => (
-                    <div key={index} className='m-5 border border-black p-5 bg-PaperBlack rounded-xl shadow-xl'>
+                    <div key={index} className='m-5 border border-black p-5 bg-PaperBlack rounded-xl shadow-xl hover:scale-105 transition duration-150 ease-in-out'>
                         <div className='flex'>
                             <Grid2x2Plus className='mr-3'/>
                             <h2 className='text-xl font-semibold'>{module.modulename}</h2>
