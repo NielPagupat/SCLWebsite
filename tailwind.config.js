@@ -7,11 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        SCLYellow: '#fcfab1',//yellow
+        SCLYellow: '#e2db28',//yellow
         SCLLightBlue: '#05F9EF',//blue
         SCLBlue: '#0c065c',//light blue
         SCLWhite: '#FFFFFF',//white
-        PaperBlack: "rgba(189, 187, 188, 0.10)"
+        PaperBlack: "rgba(189, 187, 188, 0.10)",
+        Font : '#026338',
+        Border: '#88cda5'
+
       },
       fontFamily:{
         tomorrow: ['Tomorrow', 'sans-serif'],
