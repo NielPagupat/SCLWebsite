@@ -12,11 +12,11 @@ export default function AboutUs() {
     <div id='about-us'>
         <div className='flex'>
             <div className='p-5'>
-                <img src="./src/assets/backrgounds/SCL ANIMATIONS.gif" alt="Logo" className='size-96 border border-black shadow-xl  w-screen'/>                
+                <img src="./src/assets/backrgounds/SCL ANIMATIONS.gif" alt="Logo" className='   '/>                
             </div>
             <div className='p-5 border border-amber-400 bg-PaperBlack m-5 rounded-lg shadow-xl'>
                 <h1 className='text-4xl font-semibold font-tomorrow text-Font'>About Us</h1>
-                <p className='mt-5 font-tomorrow text-lg text-Font'>{aboutUs}</p>
+                <p className='mt-5 font-tomorrow text-lg '>{aboutUs}</p>
             </div>
         </div>
         <div className='bg-PaperBlack border border-amber-400 m-5 rounded-xl shadow-xl text-Font'>
