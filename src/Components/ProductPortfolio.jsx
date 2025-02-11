@@ -29,17 +29,13 @@ export default function ProductPortfolio() {
     };
 
     return (
-        <div className="flex flex-col m-5 mt-10 mr-0 rounded-xl shadow-xl items-end border border-amber-400 bg-PaperBlack" id="products-portfolio">
+        <div className="flex flex-col mt-10 mr-0 rounded-xl shadow-xl items-end border border-amber-400 bg-PaperBlack" id="products-portfolio">
             <div className="flex w-full justify-start p-5 font-tomorrow flex-col">
                 <h1 className="font-semibold text-4xl text-Font mb-2">Product Portfolio</h1>
                 <span className='border-b w-40 border-2 border-SCLBlue'></span>
             </div>
             <div    
-                ref={scrollRef}
-                className="flex items-center border border-black bg-PaperBlack shadow-xl m-5 mr-0 mt-1 rounded-tl-3xl p-5 w-11/12 overflow-x-scroll"
-                onWheel={handleScroll} // Horizontal scroll
-                onMouseEnter={disablePageScroll} // Stop page scrolling
-                onMouseLeave={enablePageScroll} // Re-enable page scrolling
+                className="flex border border-black bg-PaperBlack shadow-xl m-5 mr-0 mt-1 rounded-tl-3xl p-5 w-11/12"
             >
            
                 {content.map((con, i) => (
@@ -49,7 +45,7 @@ export default function ProductPortfolio() {
                     </div>
 
                 ))}
-                <button className=' flex h-24 mb-16 justify-center items-center' onClick={goToProdAll}>
+                <button className=' flex mb-16 justify-center items-center self-center' onClick={goToProdAll}>
                     <span>
                         <ChevronRightCircleIcon className='size-12 text-black transition duration-300 ease-in-out transform hover:scale-110'/>
                     </span>
