@@ -71,7 +71,7 @@ export default function Navigation() {
   }
 
   return (
-    <div className='sticky top-0 flex min-w-screen justify-between p-3 drop-shadow-xl bg-SCLBlue font-tomorrow'>
+    <div className='sticky top-0 flex min-w-screen justify-between p-3 drop-shadow-xl bg-gradient-to-r from-emerald-400 to-cyan-400 font-tomorrow rounded-b-2xl'>
       <div className='flex-1'>
         <img src="" alt="Logo" onClick={backToBanner} className='border size-14'/>
       </div>
@@ -90,7 +90,7 @@ export default function Navigation() {
             </button>
             {isDropdownOpen && (
               <div className='absolute left-0 mt-2 w-48 bg-white border rounded-lg shadow-lg' onMouseLeave={()=>setIsDropdownOpen(false)}>
-                <ul className='py-2 text-gray-700'>
+                <ul className='py-2 text-Font'>
                   <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer' onClick={goToAboutUs}>Our Story</li>
                   <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer' onClick={goToTeam}>Team</li>
                 </ul>
