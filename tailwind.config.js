@@ -12,9 +12,9 @@ export default {
         SCLBlue: '#0c065c',//light blue
         SCLWhite: '#FFFFFF',//white
         PaperBlack: "rgba(78, 110, 88, 0.10)",
-        Font : '#026338',
-        Border: '#88cda5'
-
+        Font : '#0c065c',
+        Border: '#88cda5',
+        lightgreen: '#57b07f'
       },
       fontFamily:{
         tomorrow: ['Tomorrow', 'sans-serif'],

@@ -16,7 +16,7 @@ export default function AboutUs() {
             </div>
             <div className='p-5 border border-amber-400 bg-PaperBlack m-5 rounded-lg shadow-xl'>
                 <h1 className='text-4xl font-semibold font-tomorrow text-Font'>About Us</h1>
-                <p className='mt-5 font-tomorrow text-lg '>{aboutUs}</p>
+                <p className='mt-5 font-tomorrow text-lg text-Font '>{aboutUs}</p>
             </div>
         </div>
         <div className='bg-PaperBlack border border-amber-400 m-5 rounded-xl shadow-xl text-Font'>
