@@ -29,13 +29,13 @@ export default function ProductPortfolio() {
     };
 
     return (
-        <div className="flex flex-col mt-10 m-5 rounded-xl shadow-xl items-end border border-amber-400 bg-gradient-to-b from-emerald-700 to-lime-400" id="products-portfolio">
+        <div className="flex flex-col mt-10 m-5  mx-20 rounded-xl shadow-xl items-end border border-amber-400 bg-gradient-to-b from-blue-200 to-white" id="products-portfolio">
             <div className="flex w-full justify-start p-5 font-tomorrow flex-col">
-                <h1 className="font-semibold text-4xl text-Font mb-2">Product Portfolio</h1>
-                <span className='border-b w-40 border-2 border-SCLBlue'></span>
+                <h1 className="font-semibold text-4xl text-Font m-5 mb-2">Product Portfolio</h1>
+                <span className='border-b w-40 border-2 ml-5 border-SCLBlue '></span>
             </div>
             <div    
-                className="flex border border-black border-r-0 bg-gradient-to-b from-emerald-700 to-lime-400 shadow-xl m-5 mr-0 mt-1 rounded-tl-3xl p-5 w-11/12"
+                className="flex border border-black border-r-0 bg-gradient-to-b from-blue-200 to-white shadow-xl m-5 mr-0 mt-1 rounded-tl-3xl p-5 w-11/12"
             >
            
                 {content.map((con, i) => (

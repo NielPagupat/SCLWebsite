@@ -9,7 +9,7 @@ export default function ProductList() {
     <div className='grid grid-cols-3 mt-5 mx-10 rounded-lg' >
             {
                 items.map((Prod, e)=> 
-                <div className='flex flex-col items-center p-5 m-5 border border-black rounded-lg shadow-lg bg-gradient-to-b from-blue-400 to-white hover:scale-110 hover:shadow-2xl transition duration-150 ease-in-out'
+                <div className='flex flex-col items-center p-5 m-5 border border-black rounded-lg shadow-lg bg-gradient-to-t from-blue-300 to-lime-400 hover:scale-110 hover:shadow-2xl transition duration-150 ease-in-out'
                      key={e} >
                     <img src={Prod.icon} alt="picture" 
                          className='size-60 border border-black rounded-full hover:cursor-pointer hover:shadow-xl'
