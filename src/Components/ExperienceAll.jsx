@@ -8,7 +8,7 @@ export default function ExperienceAll() {
     <div className='flex flex-wrap justify-around'>
         {
             exp.map((exp, i)=>
-            <div className='flex flex-col m-5 p-5 border border-black rounded-lg w-1/4 items-center bg-gradient-to-b from-emerald-800 to-lime-400 shadow-xl hover:shadow-SCLYellow hover:shadow-2xl hover:scale-105 transition duration-150 ease-in-out'
+            <div className='flex flex-col m-5 p-5 border border-black rounded-lg w-96 items-center bg-gradient-to-b from-emerald-800 to-lime-400 shadow-xl hover:shadow-SCLYellow hover:shadow-2xl hover:scale-105 transition duration-150 ease-in-out'
                  key={i}>
                 <div>
                     <img src={exp.icon} alt="image" className='size-80 border border-black rounded-xl shadow-xl' />

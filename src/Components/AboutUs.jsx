@@ -96,7 +96,7 @@ export default function AboutUs() {
               <img
                 src={val.icon}
                 alt="service"
-                className="size-80 border border-black rounded-md shadow-xl"
+                className="size-80 border border-black rounded-md shadow-xl hover:scale-105 transition duration-150 ease-in-out active:scale-95"
               />
               <p className="font-semibold mt-2">{val.name}</p>
             </div>
