@@ -47,7 +47,7 @@ export default function Experience() {
             <h1 className='font-semibold text-4xl font-tomorrow text-Font mb-2'>Experience</h1>
             <span className='border-b w-40 border-2 border-SCLBlue'></span>
         </div>
-        <div className='flex border border-black border-r-0 bg-PaperBlack shadow-xl m-5 mr-0 mt-1 rounded-tl-3xl p-5 w-11/12'
+        <div className='flex border border-black border-r-0 bg-gradient-to-b from-emerald-700 to-lime-400 shadow-xl m-5 mr-0 mt-1 rounded-tl-3xl p-5 w-11/12'
         >  
             {
                 uniqueExperience.map((con, i) =>  
