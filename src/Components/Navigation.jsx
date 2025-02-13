@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChevronDown, ChevronLeft, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronsLeft, ChevronUp } from "lucide-react";
 import { useLocation, useMatch, useNavigate } from 'react-router';
 
 export default function Navigation() {
@@ -71,9 +71,10 @@ export default function Navigation() {
   }
 
   return (
-    <div className='sticky top-0 flex min-w-screen justify-between p-3 drop-shadow-xl bg-gradient-to-r from-cyan-400 to-SCLBlue font-tomorrow rounded-b-2xl'>
-      <div className='flex-1'>
-        <img src="../src/assets/Icons/SCL_Logo.jpg" alt="Logo" onClick={backToBanner} className='border h-11 rounded-2xl hover:cursor-pointer hover:scale-105 hover:shadow-lg active:scale-95'/>
+    <div className='sticky top-0 z-10 flex min-w-screen justify-between p-3 drop-shadow-xl bg-gradient-to-l from-SCLBlue via-lightgreen to-SCLYellow font-tomorrow rounded-b-2xl'>
+      <div className='flex flex-1 items-center'>
+        <img src="../src/assets/Icons/SCL_Logo.jpg" alt="Logo" onClick={backToBanner} className='h-11 rounded-2xl hover:cursor-pointer hover:scale-105 hover:shadow-lg active:scale-95'/>
+        <h1 className='ml-2 font-semibold font-tomorrow text-white'>DURA COMPUTER SERVICES</h1>
       </div>
       {location.pathname === '/SCL'?
         <div className='flex flex-1 justify-end items-center'>
@@ -109,11 +110,15 @@ export default function Navigation() {
         </div> : 
         location.pathname === "/SCL/Products" || matchProduct?
           <div className='flex items-center'>
-            <button onClick={back} className='text-white font-semibold'><ChevronLeft/></button>
+            <button onClick={back} className='text-white font-semibold hover:text-SCLLightBlue hover:scale-125 transition duration-150 ease-in-out active:scale-95'>
+              <ChevronsLeft className='size-10'/>
+            </button>
             <h1 className='font-semibold mr-10 p-3 text-white'>Products</h1>
           </div>:
           <div className='flex items-center'>
-            <button onClick={back} className='text-white font-semibold'><ChevronLeft/></button>
+            <button onClick={back} className='text-white font-semibold hover:text-SCLLightBlue hover:scale-125 transition duration-150 ease-in-out active:scale-95'>
+              <ChevronsLeft className='size-10'/>
+            </button>
             <h1 className='font-semibold mr-10 p-3 text-white'>Experiences</h1>
           </div>
       }
