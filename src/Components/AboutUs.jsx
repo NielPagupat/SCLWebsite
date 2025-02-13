@@ -28,7 +28,7 @@ export default function AboutUs() {
   return (
     <div id="about-us">
       <div className="flex">
-        <div className="p-5">
+        <div className="flex p-5 w-2/4 items-center">
           <img
             src="../src/assets/Images/SCL_Cover.jpg"
             alt="Logo"
