@@ -29,12 +29,12 @@ export default function Experience() {
     };
 
   return (
-    <div className='flex flex-col mt-10 rounded-xl shadow-xl m-5 items-end border border-amber-400 bg-PaperBlack' id='experience'>
+    <div className='flex flex-col mt-10 rounded-xl shadow-xl m-5 items-end border border-amber-400 bg-gradient-to-b from-emerald-700 to-lime-400' id='experience'>
         <div className='flex w-full justify-start p-5 flex-col'>
             <h1 className='font-semibold text-4xl font-tomorrow text-Font mb-2'>Experience</h1>
             <span className='border-b w-40 border-2 border-SCLBlue'></span>
         </div>
-        <div className='flex border border-black  bg-PaperBlack shadow-xl m-5 ml-16 mr-0 rounded-tl-3xl p-5 w-11/12 items-center'
+        <div className='flex border border-black  bg-gradient-to-b from-emerald-700 to-lime-400 shadow-xl m-5 ml-16 mr-0 rounded-tl-3xl p-5 w-11/12 items-center'
         >  
             {
                 content.map((con) =>  

@@ -28,7 +28,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen flex flex-1 p-8">
       <div className="flex flex-1 flex-col justify-start align-start items-start p-4 ">
-        <div className="flex flex-col items-center justify-around p-2 shadow-xl  rounded-3xl border border-amber-500 flex-1 bg-PaperBlack">
+        <div className="flex flex-col items-center justify-around p-2 shadow-xl  rounded-3xl border border-amber-500 flex-1 bg-gradient-to-b from-emerald-700 to-lime-400">
           <div className="flex flex-col items-center justify-center">
             <img
               src="./src/assets/backgrounds/SCL ANIMATIONS.gif"
@@ -86,7 +86,7 @@ export default function LandingPage() {
         <img src="./src/assets/backgrounds/SCL ANIMATIONS.gif" alt="Loading" className="w-32 h-32" />
       </div>
       <div className="flex flex-1 flex-col justify-start align-start items-start p-4">
-        <div className="flex flex-col items-center justify-center p-2 shadow-xl flex-1 w-full text-2xl  rounded-2xl border border-amber-400 font-semibold bg-PaperBlack">
+        <div className="flex flex-col items-center justify-center p-2 shadow-xl flex-1 w-full text-2xl  rounded-2xl border bg-gradient-to-b from-emerald-700 to-lime-400 font-semibold bg-PaperBlack">
         
         <div className="flex flex-row justify-center items-center text-3xl  w-full font-tomorrow text-SCLBlue mt-6">
               <p>SERVICES</p>
