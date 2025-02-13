@@ -72,7 +72,7 @@ export default function AboutUs() {
           </ul>
         </div>
         <div className="flex flex-1 pb-10 justify-around">
-          <div className="flex flex-col w-2/5 p-5 items-center rounded-xl bg-gradient-to-b from-emerald-700 to-lime-400 shadow-xl">
+          <div className="flex flex-col w-2/5 p-5 items-center rounded-xl bg-gradient-to-b from-blue-300 to-white shadow-xl">
             <div className="flex justify-center items-center gap-1">
               <Goal className="size-6" />
               <h1 className="text-2xl font-extrabold font-tomorrow">Mission</h1>
