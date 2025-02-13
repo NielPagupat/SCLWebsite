@@ -15,13 +15,18 @@ export default function ProductIndividual() {
 
     console.log(item)
     return (
-        <div className='p-5 font-tomorrow '>
-            <h1 className='text-4xl font-semibold'>{item.projectTitle}</h1>
-            <p className='text-lg my-5 font-tomorrow'>{item.projectDescription}</p>
-            <h2 className='text-2xl font-semibold'>Modules Included</h2>
+        <div className='flex flex-col p-5 font-tomorrow text-Font '>
+            <div className='bg-lightgreen rounded-md p-2 border border-black mb-5'>
+                <div className='flex flex-col gap-2'>
+                    <h1 className='text-4xl font-semibold text-Font'>{item.projectTitle}</h1>
+                    <span className='border-b-2 border-green-800 w-1/2 border-2 ml-7'></span>
+                </div>
+                <p className='text-lg my-5 font-tomorrow text-Font'>{item.projectDescription}</p>
+            </div>
+            <h2 className='text-2xl font-semibold text-Font border-black bg-lightgreen rounded-md p-2 border w-max'>Modules Included</h2>
             <div className='grid grid-cols-3'>
                 {item.modules.map((module, index) => (
-                    <div key={index} className='m-5 border border-black p-5 bg-PaperBlack rounded-xl shadow-xl hover:scale-105 transition duration-150 ease-in-out'>
+                    <div key={index} className='m-5 border border-black p-5 text-Font bg-gradient-to-b from-emerald-700 to-lime-400 rounded-xl shadow-xl hover:scale-105 transition duration-150 ease-in-out'>
                         <div className='flex'>
                             <Grid2x2Plus className='mr-3'/>
                             <h2 className='text-xl font-semibold'>{module.modulename}</h2>
