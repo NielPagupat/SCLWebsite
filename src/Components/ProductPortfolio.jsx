@@ -35,7 +35,7 @@ export default function ProductPortfolio() {
                 <span className='border-b w-40 border-2 border-SCLBlue'></span>
             </div>
             <div    
-                className="flex border border-black bg-PaperBlack shadow-xl m-5 mr-0 mt-1 rounded-tl-3xl p-5 w-11/12"
+                className="flex border border-black border-r-0 bg-PaperBlack shadow-xl m-5 mr-0 mt-1 rounded-tl-3xl p-5 w-11/12"
             >
            
                 {content.map((con, i) => (
@@ -45,7 +45,7 @@ export default function ProductPortfolio() {
                     </div>
 
                 ))}
-                <button className=' flex mb-16 justify-center items-center self-center' onClick={goToProdAll}>
+                <button className='flex mb-16 justify-center items-center self-center' onClick={goToProdAll}>
                     <div>
                         <ChevronRightCircleIcon className='size-12 text-black hover:scale-105 transition duration-300 ease-in-out hover:text-SCLBlue'/>
                     </div>

@@ -1,12 +1,25 @@
 import React, { useRef } from 'react'
 import { useNavigate } from 'react-router'
 import{ CircleEllipsis, ChevronRightCircleIcon } from "lucide-react";
+import { allExperience } from '../assets/Experience/exp';
 
 
 export default function Experience() {
-    const content = [1,2,3,4,5]
+    
     const navigate = useNavigate()
     const scrollRef = useRef(null);
+
+    const uniqueExperience = [];
+    const titles = new Set();
+
+    for (const exp of allExperience) {
+        if (!titles.has(exp.projectTitle)) {
+            titles.add(exp.projectTitle);
+            uniqueExperience.push(exp);
+        }
+        if (uniqueExperience.length === 5) break;
+    }
+
 
     const goToExp = () => {
         enablePageScroll()
@@ -29,25 +42,25 @@ export default function Experience() {
     };
 
   return (
-    <div className='flex flex-col mt-10 rounded-xl shadow-xl m-5 items-end border border-amber-400 bg-PaperBlack' id='experience'>
-        <div className='flex w-full justify-start p-5 flex-col'>
+    <div className='flex flex-col mt-10 m-5 rounded-xl shadow-xl items-end border border-amber-400 bg-PaperBlack' id='experience'>
+        <div className='flex w-full justify-start p-5 font-tomorrow flex-col'>
             <h1 className='font-semibold text-4xl font-tomorrow text-Font mb-2'>Experience</h1>
             <span className='border-b w-40 border-2 border-SCLBlue'></span>
         </div>
-        <div className='flex border border-black  bg-PaperBlack shadow-xl m-5 ml-16 mr-0 rounded-tl-3xl p-5 w-11/12 items-center'
+        <div className='flex border border-black border-r-0 bg-PaperBlack shadow-xl m-5 mr-0 mt-1 rounded-tl-3xl p-5 w-11/12'
         >  
             {
-                content.map((con) =>  
-                <div key={con} className='flex flex-col items-center'>
-                    <img src="" alt="Project" className='size-48 border border-black rounded-lg m-5 shadow-xl'/>
-                    <h3 className='font-semibold font-tomorrow text-Font'>Project Name</h3>
+                uniqueExperience.map((con, i) =>  
+                <div key={i} className='flex flex-1 flex-col items-center'>
+                    <img src={con.icon} alt="Project" className='w-40 h-40 object-cover border border-black shadow-lg m-5 rounded-md'/>
+                    <h3 className='font-semibold text-center w-40'>{con.projectTitle}</h3>
                 </div>)
                 
             }
-            <button className='flex mr-5 h-24 justify-center items-center ' onClick={goToExp}>
-                <span>
-                    <ChevronRightCircleIcon className='size-12 text-black hover:scale-110 hover:text-SCLBlue transition duration-300 ease-in-out '/>
-                </span>
+            <button className='flex mb-16 justify-center items-center self-center' onClick={goToExp}>
+                <div>
+                    <ChevronRightCircleIcon className='size-12 text-black hover:scale-105 transition duration-300 ease-in-out hover:text-SCLBlue'/>
+                </div>
             </button>
         </div>
     </div>
