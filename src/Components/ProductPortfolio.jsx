@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useNavigate } from 'react-router';
 import { allProducts } from '../assets/Products/products';
-import { ChevronRightCircleIcon } from 'lucide-react';
+import { ChevronRightCircleIcon, NotebookText } from 'lucide-react';
 
 export default function ProductPortfolio() {
     const content = allProducts.slice(0, 5);
@@ -30,12 +30,15 @@ export default function ProductPortfolio() {
 
     return (
         <div className="flex flex-col mt-10 m-5  mx-20 rounded-xl shadow-xl items-end border border-amber-400 bg-gradient-to-b from-blue-200 to-white" id="products-portfolio">
-            <div className="flex w-full justify-start p-5 font-tomorrow flex-col">
-                <h1 className="font-semibold text-4xl text-Font m-5 mb-2">Product Portfolio</h1>
-                <span className='border-b w-40 border-2 ml-5 border-SCLBlue '></span>
+            <div className="flex w-max self-start justify-start p-5 font-tomorrow flex-col ">
+                <div className='flex flex-row w-max gap-2 items-center mt-4'>
+                    <NotebookText className='size-8 m-0 text-Font' />
+                    <h1 className="font-semibold text-4xl text-Font mt-0 m-5 mr-0 mb-2 ml-0">Product Portfolio</h1>
+                </div> 
+                <span className='border-b w-full border-2 ml-5 border-SCLBlue'></span>
             </div>
             <div    
-                className="flex border border-black border-r-0 bg-gradient-to-b from-blue-200 to-white shadow-xl m-5 mr-0 mt-1 rounded-tl-3xl p-5 w-11/12"
+                className="flex border border-black border-r-0 bg-gradient-to-b from-blue-200 to-white shadow-xl m-5 mr-0 mt-1 mb-14 rounded-tl-3xl p-5 w-11/12"
             >
            
                 {content.map((con, i) => (

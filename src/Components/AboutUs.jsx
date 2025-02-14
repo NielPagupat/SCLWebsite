@@ -1,6 +1,6 @@
 import React from "react";
 import { aboutUs, Mission, Vision } from "../assets/Text/text";
-import { Goal, Eye, HandCoinsIcon, Check } from "lucide-react";
+import { Goal, Eye, HandCoinsIcon, Check, UserRoundCog } from "lucide-react";
 
 export default function AboutUs() {
   const services = [
@@ -89,14 +89,20 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="flex flex-col items-center my-10 pt-5 pb-5 m-20 bg-gradient-to-b from-blue-200 to-white border border-amber-400 rounded-xl shadow-xl text-Font font-tomorrow">
-        <h1 className="text-4xl font-semibold mb-5 mt-5">Services Offered</h1>
+      <div className="flex flex-col justify-center items-center gap-1 mt-5 w-full">
+        <div className="flex gap-2 items-center justify-center">
+          <UserRoundCog className="size-8 mb-4" />   
+          <h1 className="text-4xl font-semibold mb-4 mt-0">Services Offered</h1>
+        </div>
+         <span className="border border-b-2 border-Font w-3/4 mb-4 "></span>
+        </div>  
         <div className="flex flex-wrap justify-center">
           {services.map((val, index) => (
             <div key={index} className={`flex flex-col items-center m-5`}>
               <img
                 src={val.icon}
                 alt="service"
-                className="size-80 border border-black rounded-md shadow-xl hover:scale-105 transition duration-150 ease-in-out active:scale-95"
+                className="size-64 border border-black rounded-md shadow-xl hover:scale-105 transition duration-150 ease-in-out active:scale-95"
               />
               <p className="font-semibold mt-2">{val.name}</p>
             </div>

@@ -14,7 +14,7 @@ export default function ProductList() {
                     <img src={Prod.icon} alt="picture" 
                          className='size-60 border border-black rounded-full hover:cursor-pointer hover:shadow-xl'
                          onClick={()=>navigate(`/SCL/Products/prod/${e}`)}/>
-                    <h1 className='text-center font-tomorrow font-semibold mt-5 hover:text-SCLBlue hover:cursor-pointer'
+                    <h1 className='text-center font-tomorrow font-semibold mt-5 text-Font hover:text-SCLBlue hover:cursor-pointer'
                         onClick={()=>navigate(`/SCL/Products/prod/${e}`)}
                     >
                         {Prod.projectTitle}</h1>
