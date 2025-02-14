@@ -137,7 +137,7 @@ export const allExperience = [
      Year:"",
      company:"Department Of Agriculture Regional Field Office X", 
      address:"",
-     icon: "../src/assets/Icons/DeptAgri.jpg"
+     icon: "../src/assets/Icons/DeptAgri.jpg",
     },
     {projectTitle: "Electronic Fleet Maintenance and Dispatching Control System",
      Year:"",
