@@ -17,6 +17,13 @@ import {
 export default function LandingPage() {
   const navigate = useNavigate();
 
+  const Services = [
+      { Icon: Code, text: "Software Development & Programming" },
+      { Icon: Monitor, text: "Hardware & ICT Equipment" },
+      { Icon: Network, text: "Structured Cabling & Surveillance" },
+      { Icon: Cpu, text: "Services, Repair, & Maintenance" },
+      { Icon: Cctv, text: "ICT Consultancy & Collaboration" },
+    ]
   const goToMain = () => {
     navigate("/SCL");
   };
@@ -25,22 +32,23 @@ export default function LandingPage() {
       "https://www.facebook.com/profile.php?id=100057210141024";
   };
 
+
   return (
-    <div className="min-h-screen flex flex-1 p-8">
-      <div className="flex flex-1 flex-col justify-start align-start items-start p-4 ">
-        <div className="flex flex-col items-center justify-around p-2 shadow-xl  rounded-3xl border border-amber-500 flex-1 bg-gradient-to-t from-blue-200 to-lime-400">
+    <div className="min-h-screen flex flex-1 p-8 justify-center items-center">
+      <div className="flex w-4/5 h-4/5 flex-col justify-center items-center shadow-2xl p-8 rounded-lg bg-gradient-to-l from-SCLBlue via-lightgreen to-SCLYellow">
+        <div className="flex flex-col items-center justify-around p-2 shadow-2xl  rounded-3xl border border-amber-500 bg-gradient-to-t from-blue-200 to-lime-400">
           <div className="flex flex-col items-center justify-center">
             <img
-              src="./src/assets/backgrounds/SCL ANIMATIONS.gif"
+              src="../src/assets/Icons/SCL_Logo3.png"
               alt="Logo"
-              className="w-32 h-20 border border-black shadow-xl m-3"
+              className="h-20 m-3 drop-shadow-xl"
             />
             <span className="text-5xl font-semibold text-SCLBlue font-tomorrow">
               Dura Computer Services
             </span>
             <span className="text-2xl text-SCLBlue font-tomorrow">Software & Hardware Solutions</span>
           </div>
-          <p className="text-justify p-4 indent-8 text-xl font-tomorrow text-SCLBlue">
+          <p className="p-4 text-center text-xl font-tomorrow text-SCLBlue">
             SCL, or Software & Computer Logistics, is a leading provider of
             comprehensive IT solutions. We specialize in delivering top-notch
             software and hardware services tailored to meet the unique needs of
@@ -48,6 +56,26 @@ export default function LandingPage() {
             highest level of customer satisfaction through innovative solutions
             and exceptional support.
           </p>
+          <h1 className="text-4xl font-tomorrow font-semibold text-SCLBlue">We Offer</h1>
+          <div className="flex my-5">
+              {
+                Services.map(({ Icon, text }, index) => (
+                  <div key={index} className="relative group mx-5">
+                    {/* Tooltip */}
+                    <span className="absolute bottom-14 w-60 text-lg left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 
+                                     transition-opacity bg-gray-800 text-white text-center rounded-lg px-2 py-1">
+                      {text}
+                    </span>
+              
+                    {/* Icon with Bounce Effect */}
+                    <Icon
+                      className="size-10 text-SCLBlue animate-pulse group-hover:animate-none transition"
+                      style={{ animationDelay: `${index * 100}ms` }}
+                    />
+                  </div>
+                ))
+              }
+          </div>
           <div className="flex items-center justify-center gap-5 m-3 w-full text-center font-tomorrow text-xl text-white">
             <span className="">
               <button
@@ -61,19 +89,7 @@ export default function LandingPage() {
             <span className="">
               <button
                 className="flex border w-36 h-16 border-black rounded-xl justify-center items-center font-tomorrow bg-gradient-to-r from-sky-900 to-violet-400 transition duration-400 ease-in-out transform hover:scale-110"
-                onClick={() => {
-                  document.querySelector('.loading-screen').style.display = 'flex';
-                  document.querySelector('.loading-screen').classList.add('fade-in');
-                  setTimeout(() => {
-                    document.querySelector('.loading-screen').classList.remove('fade-in');
-                    document.querySelector('.loading-screen').classList.add('fade-out');
-                    setTimeout(() => {
-                      document.querySelector('.loading-screen').style.display = 'none';
-                      document.querySelector('.loading-screen').classList.remove('fade-out');
-                      goToMain();
-                    }, 100); // Adjust the timeout as needed
-                  }, 1000); // Adjust the timeout as needed
-                }}
+                onClick={goToMain}
               >
                 About Us
                 <ChevronRight />
@@ -82,7 +98,7 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="loading-screen fixed inset-0 flex items-center justify-center size-full" style={{ display: 'none' }}>
+      {/* <div className="loading-screen fixed inset-0 flex items-center justify-center size-full" style={{ display: 'none' }}>
         <img src="./src/assets/backgrounds/SCL ANIMATIONS.gif" alt="Loading" className="w-32 h-32" />
       </div>
       <div className="flex flex-1 flex-col justify-start align-start items-start p-4">
@@ -115,7 +131,7 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

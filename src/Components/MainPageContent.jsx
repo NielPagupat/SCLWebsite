@@ -10,7 +10,7 @@ export default function MainPageContent() {
         <AboutUs />
         <ProductPortfolio />
         <Experience />
-        <TheTeam />
+        {/* <TheTeam /> */}
     </div>
   )
 }

@@ -35,7 +35,7 @@ export default function AboutUs() {
             className="rounded-xl border border-black shadow-xl"
           />
         </div>
-        <div className="flex-1 p-5 border border-amber-400 bg-gradient-to-b from-blue-200 to-white m-5 ml-0 rounded-lg shadow-xl">
+        <div className="flex-1 p-5 bg-gradient-to-b from-blue-200 to-white m-5 ml-0 rounded-lg shadow-xl">
           <h1 className="text-4xl font-semibold font-tomorrow text-Font">
             About Us
           </h1>
@@ -88,7 +88,8 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center my-10 pt-5 pb-5 m-20 bg-gradient-to-b from-blue-200 to-white border border-amber-400 rounded-xl shadow-xl text-Font font-tomorrow">
+      <div className="flex flex-col items-center my-10 pt-5 pb-5 m-20 bg-gradient-to-b from-blue-200 to-white rounded-xl shadow-xl text-Font font-tomorrow"
+           id="scl-services">
         <h1 className="text-4xl font-semibold mb-5 mt-5">Services Offered</h1>
         <div className="flex flex-wrap justify-center">
           {services.map((val, index) => (
@@ -96,7 +97,7 @@ export default function AboutUs() {
               <img
                 src={val.icon}
                 alt="service"
-                className="size-80 border border-black rounded-md shadow-xl hover:scale-105 transition duration-150 ease-in-out active:scale-95"
+                className="size-80 border border-black rounded-md shadow-xl hover:scale-105 transition duration-150 ease-in-out   "
               />
               <p className="font-semibold mt-2">{val.name}</p>
             </div>

@@ -50,8 +50,8 @@ export default function Navigation() {
     }
   }
 
-  const goToTeam = () => {
-    const element = document.getElementById('the-team');
+  const goToService = () => {
+    const element = document.getElementById('scl-services');
     if (element) {
       const offset = 100;
       const elementPosition = element.getBoundingClientRect().top + window.scrollY;
@@ -96,8 +96,8 @@ export default function Navigation() {
                         Our Story
                   </li>
                   <li className='px-4 py-2 hover:rounded-xl hover:bg-gray-100 cursor-pointer hover:scale-105 transition duration-150 ease-in-out active:scale-95'
-                      onClick={goToTeam}>
-                        Team
+                      onClick={goToService}>
+                        Services
                   </li>
                 </ul>
               </div>

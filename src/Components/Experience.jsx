@@ -42,7 +42,7 @@ export default function Experience() {
     };
 
   return (
-    <div className='flex flex-col mx-20 mt-10 m-5 rounded-xl shadow-xl items-end border bg-gradient-to-b from-blue-200 to-white border-amber-400 bg-PaperBlack' id='experience'>
+    <div className='flex flex-col mx-20 mt-10 m-5 rounded-xl shadow-xl items-end bg-gradient-to-b from-blue-200 to-white bg-PaperBlack' id='experience'>
         <div className='flex w-full justify-start p-5 font-tomorrow flex-col'>
             <h1 className='font-semibold text-4xl font-tomorrow text-Font m-5 mb-2'>Experiences/Projects</h1>
             <span className='border-b w-40 border-2 border-SCLBlue ml-5'></span>
@@ -52,7 +52,7 @@ export default function Experience() {
             {
                 uniqueExperience.map((con, i) =>  
                 <div key={i} className='flex flex-1 flex-col items-center'>
-                    <img src={con.icon} alt="Project" className='w-40 h-40 object-cover border border-black shadow-lg m-5 rounded-md hover:scale-110 transition duration-150 ease-in-out active:scale-95'/>
+                    <img src={con.icon} alt="Project" className='w-40 h-40 object-cover border border-black shadow-lg m-5 rounded-md hover:scale-110 transition duration-150 ease-in-out'/>
                     <h3 className='font-semibold text-center w-40'>{con.projectTitle}</h3>
                 </div>)
                 
