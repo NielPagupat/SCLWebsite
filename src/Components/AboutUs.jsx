@@ -1,6 +1,6 @@
 import React from "react";
 import { aboutUs, Mission, Vision } from "../assets/Text/text";
-import { Goal, Eye, HandCoinsIcon, Check } from "lucide-react";
+import { Goal, Eye, HandCoinsIcon, Check, UserRoundCog } from "lucide-react";
 
 export default function AboutUs() {
   const services = [
