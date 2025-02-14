@@ -44,7 +44,7 @@ export default function Experience() {
   return (
     <div className='flex flex-col mx-20 mt-10 m-5 rounded-xl shadow-xl items-end border bg-gradient-to-b from-blue-200 to-white border-amber-400 bg-PaperBlack' id='experience'>
         <div className='flex w-full justify-start p-5 font-tomorrow flex-col'>
-            <h1 className='font-semibold text-4xl font-tomorrow text-Font m-5 mb-2'>Experience</h1>
+            <h1 className='font-semibold text-4xl font-tomorrow text-Font m-5 mb-2'>Experiences/Projects</h1>
             <span className='border-b w-40 border-2 border-SCLBlue ml-5'></span>
         </div>
         <div className='flex border border-black border-r-0 bg-gradient-to-b from-blue-200 to-white shadow-xl m-5 mr-0 mt-1 rounded-tl-3xl p-5 w-11/12'
