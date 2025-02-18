@@ -153,7 +153,7 @@ export const allExperience = [
      company:"Xavier University Community Multi-Purpose Cooperative (XUCMPC)", 
      address:"",
      icon: "../src/assets/Icons/xavier.jpg",
-     image:[]
+     image:["../src/assets/Icons/xavier.jpg",]
     },
     {projectTitle: "Electronic Procurement Document Filing System",
      Year:"",

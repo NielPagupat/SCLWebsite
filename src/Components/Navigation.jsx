@@ -63,8 +63,9 @@ export default function Navigation() {
   }
 
   const back = () => {
-    navigate(-1)
+    navigate('/SCL')
   }
+  
 
   const backToBanner = () => {
     navigate('/')

@@ -11,6 +11,8 @@ import ExperienceAll from './Components/ExperienceAll'
 import Test from './Pages/Test'
 import ProductIndividual from './Components/ProductIndividual'
 import ProductList from './Components/ProductList'
+import Projects from './Components/Projects'
+import Trainings from './Components/Trainings'
 
 function App() {
  
@@ -25,8 +27,10 @@ function App() {
             <Route path='/SCL/Products' element={<ProductList />}/>
             <Route path='/SCL/Products/prod/:prod' element={<ProductIndividual />}/>
           </Route>
-          <Route path='/SCL/Experience' element={<ExperienceAll />}/>
-          <Route path='/SCL/Experience' element={<ExperienceAll />}/>
+          <Route path='/SCL/Experience' element={<ExperienceAll />}>
+              <Route path='/SCL/Experience' element={<Projects />}/>
+              <Route path='/SCL/Experience/Trainings' element={<Trainings />}/>
+          </Route>
         </Route>
         <Route path='/Test' element={<Test />}/>
       </Routes>
