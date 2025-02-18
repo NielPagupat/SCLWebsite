@@ -19,6 +19,9 @@ export default {
       },
       fontFamily:{
         tomorrow: ['Tomorrow', 'sans-serif'],
+      },
+      minWidth:{
+        navmin: "1018px",
       }
 
     },
