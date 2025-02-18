@@ -94,7 +94,7 @@ export default function AboutUs() {
           <div className="flex gap-2 items-center justify-center">
             <UserRoundCog className="size-8 mb-4" />   
             <h1 className="text-4xl font-semibold mb-4 mt-0">Services Offered</h1>
-          </div>
+          </div>  
           <span className="border border-b-2 border-Font w-3/4 mb-4 "></span>
         </div> 
         <div className="flex flex-wrap justify-center">
