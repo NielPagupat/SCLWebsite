@@ -72,7 +72,7 @@ export default function AboutUs() {
           ))}
         </div>
       </div>
-      <div className="flex flex-col items-center my-10 pt-5 pb-10 bg-gradient-to-b from-blue-200 to-white rounded-xl shadow-xl text-Font font-tomorrow w-full">
+      <div className="flex flex-col items-center my-10 pt-5 pb-10 bg-gradient-to-b from-blue-200 to-white rounded-xl shadow-xl text-Font font-tomorrow w-full" id='scl-services'>
         <div className="text-center w-full">
           <div className="flex justify-center items-center gap-2">
             <UserRoundCog className="size-8 mb-4" />

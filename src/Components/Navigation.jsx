@@ -68,34 +68,37 @@ export default function Navigation() {
           <button className='mr-10 p-3 text-white font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToProductsPortfolio}>Product Portfolio</button>
           <button className='mr-10 p-3 text-white font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToExperience}>Experiences</button>
         </div>
-      ) : location.pathname === "/SCL/Products" || matchProduct ? (
+      ) : location.pathname === "/SCL/Products" || matchProduct || location.pathname === "/SCL/Experience" ? (
         <div className='flex items-center'>
           <button onClick={back} className='text-white font-semibold hover:text-SCLLightBlue hover:scale-125 transition duration-150 ease-in-out active:scale-95'>
-            <ChevronsLeft className='size-10'/>
+            <ChevronsLeft className='w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10'/>
           </button>
-          <h1 className='font-semibold mr-10 p-3 text-white'>Products</h1>
         </div>
       ) : (
         <div className='flex items-center'>
           <button onClick={back} className='text-white font-semibold hover:text-SCLLightBlue hover:scale-125 transition duration-150 ease-in-out active:scale-95'>
-            <ChevronsLeft className='size-10'/>
+            <ChevronsLeft className='w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10'/>
           </button>
-          <h1 className='font-semibold mr-10 p-3 text-white'>Experiences</h1>
+          <h1 className='font-semibold mr-10 p-3 text-white hidden md:block'>Experiences</h1>
         </div>
       )}
       
-      <div className='md:hidden flex items-center'>
-        <button onClick={toggleMobileMenu} className='text-white'>
-          {isMobileMenuOpen ? <X className="w-8 h-8 transition-transform duration-300 mr-10" /> : <Menu className="w-8 h-8 transition-transform duration-300 mr-10" />}
-        </button>
-      </div>
+      {location.pathname === '/SCL' && (
+        <div className='md:hidden flex items-center'>
+          <button onClick={toggleMobileMenu} className='text-white'>
+            {isMobileMenuOpen ? <X className="w-8 h-8 transition-transform duration-300 mr-10" /> : <Menu className="w-8 h-8 transition-transform duration-300 mr-10" />}
+          </button>
+        </div>
+      )}
       
-      <div className={`absolute top-16 right-0 rounded-md bg-white mr-6 shadow-lg p-4 flex flex-col space-y-4 md:hidden transition-transform duration-300 ${isMobileMenuOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0 pointer-events-none'}`}>
-        <button className='text-Font font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToAboutUs}>About Us</button>
-        <button className='text-Font font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToService}>Services</button>
-        <button className='text-Font font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToProductsPortfolio}>Product Portfolio</button>
-        <button className='text-Font font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToExperience}>Experiences</button>
-      </div>
+      {isMobileMenuOpen && location.pathname === '/SCL' && (
+        <div className='absolute top-16 right-0 rounded-md bg-white mr-6 shadow-lg p-4 flex flex-col space-y-4 md:hidden transition-transform duration-300 scale-100 opacity-100'>
+          <button className='text-Font font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToAboutUs}>About Us</button>
+          <button className='text-Font font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToService}>Services</button>
+          <button className='text-Font font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToProductsPortfolio}>Product Portfolio</button>
+          <button className='text-Font font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToExperience}>Experiences</button>
+        </div>
+      )}
     </div>
   );
 }
