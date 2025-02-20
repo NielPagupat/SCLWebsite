@@ -29,7 +29,7 @@ export default function ProductPortfolio() {
     };
 
     return (
-        <div className="flex flex-col mt-10 m-5  mx-20 rounded-xl shadow-xl items-end bg-gradient-to-b from-blue-200 to-white" id="products-portfolio">
+        <div className="flex flex-col mt-10 m-5  mx-20 rounded-xl shadow-xl items-end bg-gradient-to-b from-blue-200 to-white" id="products-portfolio ">
             <div className="flex w-max self-start justify-start p-5 font-tomorrow flex-col ">
                 <div className='flex flex-row w-max gap-2 items-center mt-4'>
                     <NotebookText className='size-8 m-0 text-Font' />
@@ -42,7 +42,7 @@ export default function ProductPortfolio() {
             >
            
                 {content.map((con, i) => (
-                    <div key={i} className="flex flex-col items-center mx-5">
+                    <div key={i} className="flex flex-col items-center mx-5 ">
                         <img src={con.icon} alt="Product" className="w-40 h-40 object-cover border border-black shadow-lg m-5 rounded-md hover:scale-110 transition duration-150 ease-in-out" />
                         <h3 className="font-semibold text-center">{con.projectTitle}</h3>
                     </div>

@@ -26,7 +26,7 @@ export default function AboutUs() {
     },
   ];
   return (
-    <div id="about-us">
+    <div id="about-us ">
       <div className="flex">
         <div className="flex p-5 w-2/5 items-center">
           <img
@@ -36,7 +36,7 @@ export default function AboutUs() {
           />
         </div>
         <div className="flex-1 p-5 bg-gradient-to-b from-blue-200 to-white m-5 ml-0 rounded-lg shadow-xl">
-          <h1 className="text-4xl font-semibold font-tomorrow text-Font">
+          <h1 className="text-4xl font-semibold font-tomorrow text-Font ">
             About Us
           </h1>
           <p className="mt-5 font-tomorrow text-lg text-Font ">{aboutUs}</p>
@@ -55,18 +55,18 @@ export default function AboutUs() {
             </h3>
             <span className="border-t border-black w-8 border-2"></span>
           </div>
-          <ul className="flex font-tomorrow text-center text-xl justify-around items-center">
-            <Check className="size-8"/>
-            <li className="m-5 mr-10 brightness ml-1 p-1.5 font-semibold  border-blue-900 border-2 rounded-3xl rounder-full text-3xl value-li">
+          <ul className="flex font-tomorrow text-center text-2xl justify-around items-center">
+            
+            <li className=" flex flex-row m-5 mr-10 brightness ml-1 p-3 font-semibold  border-blue-900 border-2 rounded-3xl duration-300 ease-in transform hover:scale-95 value-li">
+            <Check className="size-6"/>
              Easy to Buy
             </li>
-
-            <Check className="size-8"/>
-            <li className="m-5 mr-10 brightness ml-1 p-1.5 font-semibold border-blue-900  border-2 rounded-3xl text-3xl value-li">
+            <li className="flex flex-row m-5 mr-10 brightness ml-1 p-3 font-semibold border-blue-900  border-2 rounded-3xl duration-300 ease-in transform hover:scale-95 value-li">
+            <Check className="size-6"/>
               Excellent Support and Service
             </li>
-            <Check className="size-8"/>
-            <li className="m-5 mr-10 brightness ml-1 p-1.5 font-semibold border-blue-900 border-2 rounded-3xl text-3xl  value-li">
+            <li className="flex flex-row m-5 mr-10 brightness ml-1 p-3 font-semibold border-blue-900 border-2 rounded-3xl duration-300 ease-in transform hover:scale-95 value-li">
+            <Check className="size-6"/>
               Efficient to Use
             </li>
           </ul>
@@ -88,7 +88,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center my-10 pt-5 pb-5 m-20 bg-gradient-to-b from-blue-200 to-white rounded-xl shadow-xl text-Font font-tomorrow"
+      <div className="flex flex-col items-center my-10 pt-5 pb-10 m-20 bg-gradient-to-b from-blue-200 to-white rounded-xl shadow-xl text-Font font-tomorrow"
            id="scl-services">
         <div className="flex flex-col justify-center items-center gap-1 mt-5 w-full">
           <div className="flex gap-2 items-center justify-center">
@@ -108,6 +108,7 @@ export default function AboutUs() {
               <p className="font-semibold mt-2">{val.name}</p>
             </div>
           ))}
+          <span className="border border-b-2 border-Font w-3/4 mb-4 mt-3 "></span>
         </div>
       </div>
     </div>
