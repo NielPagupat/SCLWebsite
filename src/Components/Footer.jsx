@@ -28,11 +28,11 @@ export default function Footer() {
           <div className="flex justify-between items-center">
             <div className='flex flex-col'>
                  <button onClick={() => setIsOpen(false)}>
-                              <CircleX className="size-7 self-start mr-20" />
+                              <CircleX className="size-7 self-start mr-20 text-SCLWhite" />
                             </button>
             </div>
           </div>
-          <div className='flex justify-center text-black'>
+          <div className='flex justify-center text-SCLWhite'>
             {Contacts.map((contact, index) => (
               <p key={index} className="flex mt-4 mr-10 font-semibold"><div className='flex flex-col'>{contact}<span className='border-b border-SCLBlue border-1 '></span></div></p>
             ))}
