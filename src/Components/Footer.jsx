@@ -24,20 +24,20 @@ export default function Footer() {
           transition={{ type: "spring", stiffness: 200, damping: 20 }}
           className="fixed bottom-0 left-0 w-screen shadow-2xl rounded-t-2xl p-6 border-t border-black bg-gradient-to-r from-SCLBlue via-lightgreen to-SCLYellow"
         >
+        <div className='flex flex-row gap-5 justify-start items-center mx-0 w-full'>
           <div className="flex justify-between items-center">
             <div className='flex flex-col'>
-                <h2 className="text-lg font-semibold text-white">Contact Us</h2>
-                <span className='border-b border-SCLBlue border-1 '></span>
+                 <button onClick={() => setIsOpen(false)}>
+                              <CircleX className="size-7 self-start mr-20 text-SCLWhite" />
+                            </button>
             </div>
-            <button onClick={() => setIsOpen(false)}>
-              <CircleX className="w-6 h-6" />
-            </button>
           </div>
-          <div className='flex justify-center text-black'>
+          <div className='flex justify-center text-SCLWhite'>
             {Contacts.map((contact, index) => (
               <p key={index} className="flex mt-4 mr-10 font-semibold"><div className='flex flex-col'>{contact}<span className='border-b border-SCLBlue border-1 '></span></div></p>
             ))}
           </div>
+        </div>   
         </motion.div>
       )}
     </div>

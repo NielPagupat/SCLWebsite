@@ -21,7 +21,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />}/>
-        <Route path="/SCL" element={<SCLMainPage />}>
+        <Route path="/SCL" element={<SCLMainPage />}> 
           <Route path='/SCL' element={<MainPageContent />}/>
           <Route path='/SCL/Products' element={<ProductsAll />}>
             <Route path='/SCL/Products' element={<ProductList />}/>
