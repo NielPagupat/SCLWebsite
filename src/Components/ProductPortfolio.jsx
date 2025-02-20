@@ -29,7 +29,7 @@ export default function ProductPortfolio() {
     };
 
     return (
-        <div className="flex flex-col mt-10 m-5  mx-20 rounded-xl shadow-xl items-end bg-gradient-to-b from-blue-200 to-white" id="products-portfolio ">
+        <div className="flex flex-col mt-10 m-5  mx-20 rounded-xl shadow-xl items-end bg-gradient-to-b from-blue-200 to-white" id="products-portfolio">
             <div className="flex w-max self-start justify-start p-5 font-tomorrow flex-col ">
                 <div className='flex flex-row w-max gap-2 items-center mt-4'>
                     <NotebookText className='size-8 m-0 text-Font' />
