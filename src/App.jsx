@@ -28,7 +28,7 @@ function App() {
             <Route path='/SCL/Products/prod/:prod' element={<ProductIndividual />}/>
           </Route>
           <Route path='/SCL/Experience' element={<ExperienceAll />}>
-              <Route path='/SCL/Experience' element={<Projects />}/>
+              <Route index element={<Projects />}/>
               <Route path='/SCL/Experience/Trainings' element={<Trainings />}/>
           </Route>
         </Route>
