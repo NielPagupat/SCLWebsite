@@ -1,0 +1,28 @@
+{
+    "routes": [
+        {
+            "src": "/SCL",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/SCL/Products",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/SCL/Products/prod/:prod",
+            "dest": "/SCL/Products/prod/[pr"
+        },
+        {
+            "src": "/SCL/Experience",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/SCL/Experience/Trainings",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/Test",
+            "dest": "/index.html"
+        }
+    ]
+}
