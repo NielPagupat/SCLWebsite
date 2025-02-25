@@ -74,11 +74,11 @@ export default function AboutUs() {
       </div>
       <div className="flex flex-col items-center my-10 pt-5 pb-10 bg-gradient-to-b from-blue-200 to-white rounded-xl shadow-xl text-Font font-tomorrow w-full" id='scl-services'>
         <div className="text-center w-full">
-          <div className="flex justify-center items-center gap-2">
-            <UserRoundCog className="size-8 mb-4" />
-            <h1 className="text-4xl font-semibold mb-4">Services Offered</h1>
+          <div className="flex justify-center items-center gap-2 flex-col md:flex-row">
+            <UserRoundCog className="size-8 md:mb-8" />
+            <h1 className="flex flex-col text-4xl font-semibold mb-4">Services Offered <span className="border border-b-2 border-Font w-full mb-4 mx-auto "></span></h1>
           </div>
-          <span className="border border-b-2 border-Font w-3/4 mb-4 mx-auto"></span>
+         
         </div>
         <div className="flex flex-wrap justify-center">
           {services.map((val, index) => (
