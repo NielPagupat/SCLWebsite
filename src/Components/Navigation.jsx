@@ -41,7 +41,7 @@ export default function Navigation() {
   return (
     <div className='sticky top-0 z-10 flex justify-between p-3 drop-shadow-xl bg-gradient-to-l from-SCLBlue via-lightgreen to-SCLYellow font-tomorrow rounded-b-2xl'>
       <div className='flex flex-1 items-center'>
-        <img src="../src/assets/Icons/SCL_Logo.jpg" alt="Logo" onClick={backToBanner} className='h-11 rounded-2xl hover:cursor-pointer hover:scale-105 hover:shadow-lg active:scale-95 transition-transform duration-300'/>
+        <img src="/Icons/SCL_Logo.jpg" alt="Logo" onClick={backToBanner} className='h-11 rounded-2xl hover:cursor-pointer hover:scale-105 hover:shadow-lg active:scale-95 transition-transform duration-300'/>
         <h1 className='ml-2 font-semibold text-white'>DURA COMPUTER SERVICES</h1>
       </div>
       

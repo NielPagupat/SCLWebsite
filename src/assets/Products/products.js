@@ -5,7 +5,7 @@ export const allProducts = [
     projectTitle: "Cooperative Management Information System (CMIS)",
     projectDescription:
       "A customize cooperative management system designed for stand alone or integrated modules. Its purpose is to help the end users manage to effectively and efficiently. Reduce the multiple recording and faster report consolidation in the aspect of Financial, Goods, and Services including other allied areas.",      
-    icon : '../src/assets/Icons/CMIS.webp',
+    icon : '/Icons/CMIS.webp',
     modules: [
       {
         modulename: "Membership Management Module",
@@ -153,7 +153,7 @@ export const allProducts = [
     projectTitle: "Integrated Office Automation System (iOAS)",
     projectDescription:
       "A customized office management system designed for stand alone or integrated modules. Its purpose is to help the end users to manage effectively and efficiently. Reduce the multiple recording and faster report consolidation in the aspect of Financial, Goods and Services including other allied areas.",
-    icon:"../src/assets/Icons/iOAS.webp",
+    icon:"/Icons/iOAS.webp",
     modules: [
       {
         modulename: "Integrated Accounting System",
@@ -259,7 +259,7 @@ export const allProducts = [
     projectTitle: "Integrated Restaurant Information System (iRIS)",
     projectDescription:
       "Customed design for every restaurant be it in a fastfood chain type or a fine dine-in scenario. It can be integrated to other sub module like standard Payroll Module with direct to computer Daily Time Recording, Standard Disbursement and Expenses Module, Menu/Stocks Inventory Module.",
-    icon:"../src/assets/Icons/iRIS.webp",
+    icon:"/Icons/iRIS.webp",
     modules: [
       {
         modulename: "Features",
@@ -293,7 +293,7 @@ export const allProducts = [
     projectTitle: "Fleet Management and Dispatching Control System (eFMDSys)",
     projectDescription:
       "Designed to help the Department of Agriculture's General Suport Services Department(GSS). This include Vehicle Trip and Scheduling Management and Monitoring. With its sub module includes Vehicle and Driver Profiling and Fleet/Vehicle Repair and Preventive Maintenance",
-    icon:"../src/assets/Icons/eFMDSys.webp",
+    icon:"/Icons/eFMDSys.webp",
     modules: [
       {
         modulename: "Features",
@@ -343,7 +343,7 @@ export const allProducts = [
       "Designed to cater to the demands of more than ten thousand (10,000) employees. This includes the first step of Payroll Computations, Daily Time Recording, Rate Set-up, Mandatory Deductions, Loans up to Printing of Individual PaySlip as well as Bank Transmittal Report.",
       "It is a mixed platform interface, web-based and desktop application for a more robust, reliable, and scalable system.",
     ],
-    icon:"../src/assets/Icons/iPIS.webp",
+    icon:"/Icons/iPIS.webp",
     modules: [
       {
         modulename: "Features",
@@ -393,7 +393,7 @@ export const allProducts = [
     projectTitle: "Procurement Document Filing System (PDFSys)",
     projectDescription:
       "Designed to ease the Procurement Documents and other related documents of Department of Agricultures Bids and Awards Committee (BAC A1, A2, and A3). With the scanned - electronic copy of all the documents in every Procurement Transactions this can help the end user work efficiency and daily throughput.",
-    icon:"../src/assets/Icons/PDFSys.webp",
+    icon:"/Icons/PDFSys.webp",
     modules: [
       {
         modulename: "Features",
@@ -443,7 +443,7 @@ export const allProducts = [
       "Its Report Print out and forms are based on the latest Government Accounting Form (GAM). The systems Interface and processes designed and consolidated according to different end users. It has a third party module using mobile devices for convenient Yearly Physical Count Inventory intended for multiple areas and office sites.",
       "The module also includes the Archiving of Asset for Expired Items and Gate Pass Entry and Issuance.",
     ],
-    icon:"../src/assets/Icons/ePinSys.webp",
+    icon:"/Icons/ePinSys.webp",
     modules: [
       {
         modulename: "feature",
@@ -508,7 +508,7 @@ export const allProducts = [
       "Its report printouts and forms are based on the latest Government Accounting Form (GAM). The system's interface and processes are designed according to the flow of procurement (specifically for the Department of Agriculture), aiming to minimize the multiple encoding of PPMP, consolidation of APP reports, uniform item costing and pricing, procurement monitoring, APCPI requirements, and reports.",
       "The module also includes inventory monitoring of office supplies and materials, covering issuance, monitoring, and its equivalent reports. Additionally, it provides templates for forms such as Disbursement Voucher, Obligation Request, and BURS Form.",
     ],
-    icon:"../src/assets/Icons/eProcSys.webp",
+    icon:"/Icons/eProcSys.webp",
     modules: [
       {
         modulename: "Features",
@@ -574,7 +574,7 @@ export const allProducts = [
   {
     projectTitle: "Integrated Inventory-Warehousing and Sale System (iIWSS)",
     projectDescription: "Designed to monitor stocks receiving and issuances/sales. It can run on an integrated or stand-alone module. Customized reporting for Sales, Inventory, and Stocks Demographic.",
-    icon:"../src/assets/Icons/iIWSS.webp",
+    icon:"/Icons/iIWSS.webp",
     modules: [
       {
         modulename: "Features",

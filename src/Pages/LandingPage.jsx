@@ -39,7 +39,7 @@ export default function LandingPage() {
         <div className="flex flex-col items-center justify-around p-2 shadow-2xl  rounded-3xl border border-amber-500 bg-gradient-to-t from-blue-200 to-lime-400">
           <div className="flex flex-col items-center justify-center">
             <img
-              src="../src/assets/Icons/SCL_Logo3.png"
+              src="/Icons/SCL_Logo3.png"
               alt="Logo"
               className="h-20 m-3 drop-shadow-xl"
             />

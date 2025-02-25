@@ -6,23 +6,23 @@ export default function AboutUs() {
   const services = [
     {
       name: "SOFTWARE DEVELOPMENT AND PROGRAMMING",
-      icon: "../src/assets/Icons/Service1.webp",
+      icon: "/Icons/Service1.webp",
     },
     {
       name: "HARDWARE AND ICT EQUIPMENT",
-      icon: "../src/assets/Icons/Service2.webp",
+      icon: "/Icons/Service2.webp",
     },
     {
       name: "STRUCTURED CABLING AND SURVEILLANCE",
-      icon: "../src/assets/Icons/Service3.webp",
+      icon: "/Icons/Service3.webp",
     },
     {
       name: "SERVICES REPAIR AND MAINTENANCE",
-      icon: "../src/assets/Icons/Service4.webp",
+      icon: "/Icons/Service4.webp",
     },
     {
       name: "ICT CONSULTANCY AND COLLABORATION",
-      icon: "../src/assets/Icons/Service5.webp",
+      icon: "/Icons/Service5.webp",
     },
   ];
   return (
@@ -30,7 +30,7 @@ export default function AboutUs() {
       <div className="flex flex-col md:flex-row items-center md:items-start">
         <div className="w-full md:w-2/5 flex justify-center p-5">
           <img
-            src="../src/assets/Images/SCL_Cover.jpg"
+            src="/Images/SCL_Cover.jpg"
             alt="Logo"
             className="rounded-xl border border-black shadow-xl max-w-full h-auto"
           />
