@@ -26,7 +26,7 @@ export default function ProductPortfolio() {
             <div className='flex border border-black border-r-0 bg-gradient-to-b from-blue-200 to-white shadow-xl m-5 mr-0 mt-1 mb-14 rounded-tl-3xl p-5 w-full md:w-11/12 overflow-x-auto'> 
            
                 {content.map((con, i) => (
-                    <div key={i} className="flex flex-col items-center min-w-[150px] md:min-w-[200px] ">
+                    <div key={i} className="flex flex-1 flex-col items-center min-w-[150px] md:min-w-[200px] ">
                         <img src={con.icon} alt="Product" className="w-20 h-20 md:w-40 md:h-40 object-cover border border-black shadow-lg m-5 rounded-md hover:scale-110 transition duration-150 ease-in-out" />
                         <h3 className="font-semibold text-center w-20 md:w-40">{con.projectTitle}</h3>
                     </div>
