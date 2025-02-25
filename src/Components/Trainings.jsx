@@ -38,14 +38,14 @@ export default function Trainings() {
             <div className="flex flex-wrap justify-around">
                 {trainings.map((item, i) => (
                     <div
-                        className="flex flex-col m-5 p-5 border border-black rounded-lg w-96 items-center bg-gradient-to-t from-blue-300 to-lime-400 shadow-xl hover:shadow-SCLYellow hover:shadow-2xl hover:scale-105 transition duration-150 ease-in-out"
+                        className="flex flex-col m-5 p-5 border border-black rounded-lg w-full sm:w-96 items-center bg-gradient-to-t from-blue-300 to-lime-400 shadow-xl hover:shadow-SCLYellow hover:shadow-2xl hover:scale-105 transition duration-150 ease-in-out"
                         key={i}
                     >
                         <h1 className="my-2 h-14 text-center text-xl font-tomorrow font-bold">{item.System}</h1>
                         <img
                             src={item.Images[0]}
                             alt={item.System}
-                            className="size-60 border border-black rounded-xl shadow-xl"
+                            className="w-full sm:w-60 border border-black rounded-xl shadow-xl"
                         />
                         <h2 className="my-5 text-center font-semibold font-tomorrow">{item.Org}</h2>
                         <p className="text-center font-tomorrow font-medium">{item.description}</p>
@@ -77,7 +77,7 @@ export default function Trainings() {
                             <ChevronLeft />
                         </button>
                         {items.length > 0 && (
-                            <img src={items[index]} alt={`Training Image ${index}`} className=" text-white max-h-96" />
+                            <img src={items[index]} alt={`Training Image ${index}`} className="text-white max-h-96" />
                         )}
                         <button className="text-white p-3 hover:bg-PaperBlack h-full" onClick={increment}>
                             <ChevronRight />
