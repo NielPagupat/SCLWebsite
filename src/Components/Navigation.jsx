@@ -69,9 +69,16 @@ export default function Navigation() {
           <button className='mr-10 p-3 text-white font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToProductsPortfolio}>Product Portfolio</button>
           <button className='mr-10 p-3 text-white font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToExperience}>Experiences</button>
         </div>
-      ) : location.pathname === "/SCL/Products" || matchProduct ? (
+      ) : location.pathname === "/SCL/Products" ? (
         <div className='flex items-center'>
           <button onClick={backToMenu} className='text-white font-semibold hover:text-SCLLightBlue hover:scale-125 transition duration-150 ease-in-out active:scale-95'>
+            <ChevronsLeft className='w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10'/>
+          </button>
+          <h1 className='text-xl font-semibold font-tomorrow text-white mx-5'>Products</h1>
+        </div>
+      ) : matchProduct ? (
+        <div className='flex items-center'>
+          <button onClick={() => navigate('/SCL/Products')} className='text-white font-semibold hover:text-SCLLightBlue hover:scale-125 transition duration-150 ease-in-out active:scale-95'>
             <ChevronsLeft className='w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10'/>
           </button>
           <h1 className='text-xl font-semibold font-tomorrow text-white mx-5'>Products</h1>
