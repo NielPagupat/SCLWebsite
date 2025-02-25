@@ -28,10 +28,10 @@ export const trainings = [
                  '/training/2019/DARegionalFieldUnit102019/4.jpg']
     },
     {
-        Org: 'to be asked',
+        Org: 'DEPARTMENT OF AGRICULTURE REGIONAL FIELD OFFICE 10',
         System: 'ePayables System',
         Date: {year: '2019', month: 'November', day: '9'},
-        description: 'ePayables Information System 1day Training and Deployment 1',
+        description: 'ePayables Information System day 1 Training and Deployment',
         Images: ['/training/2019/ePayables2019/1.jpg',
                  '/training/2019/ePayables2019/2.jpg',
                  '/training/2019/ePayables2019/3.jpg']
@@ -161,5 +161,19 @@ export const trainings = [
                  '/training/2024/iKioskMRXUH2024/2.jpg',
                  '/training/2024/iKioskMRXUH2024/3.jpg',
                  '/training/2024/iKioskMRXUH2024/4.jpg']
+    },
+    {
+        Org: 'General Services Multi-Purpose Cooperative (GSMPC)',
+        System: 'Structured Cabling',
+        Date: {year: '2017', month: 'December', day: '31'},
+        description: 'Network Cable Installation',
+        Images: ['/training/CABLING(2017)/1.jpg', 
+                 '/training/CABLING(2017)/2.jpg',
+                 '/training/CABLING(2017)/3.jpg',
+                 '/training/CABLING(2017)/4.jpg',
+                 '/training/CABLING(2017)/5.jpg',
+                 '/training/CABLING(2017)/6.jpg',
+                 '/training/CABLING(2017)/7.jpg',
+                 '/training/CABLING(2017)/8.jpg']
     },
 ]

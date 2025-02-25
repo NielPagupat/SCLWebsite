@@ -45,7 +45,7 @@ export default function Trainings() {
                         <img
                             src={item.Images[0]}
                             alt={item.System}
-                            className="w-full sm:w-60 border border-black rounded-xl shadow-xl"
+                            className="w-full sm:w-60 border  size-40 md:size-60 border-black rounded-xl shadow-xl"
                         />
                         <h2 className="my-5 text-center font-semibold font-tomorrow">{item.Org}</h2>
                         <p className="text-center font-tomorrow font-medium">{item.description}</p>
@@ -77,19 +77,19 @@ export default function Trainings() {
                             <ChevronLeft />
                         </button>
                         {items.length > 0 && (
-                            <img src={items[index]} alt={`Training Image ${index}`} className="text-white max-h-96" />
+                            <img src={items[index]} alt={`Training Image ${index}`} className="text-white max-h-96 size-60 md:size-auto" />
                         )}
                         <button className="text-white p-3 hover:bg-PaperBlack h-full" onClick={increment}>
                             <ChevronRight />
                         </button>
                     </div>
-                    <div className="flex h-52 w-full justify-center overflow-x-auto bg-PaperBlack">
+                    <div className="flex h-52 w-full justify-center overflow-x-auto bg-PaperBlack items-center">
                         {items.map((item, i) => (
                             <div key={i} className="cursor-pointer">
                                 <img
                                     src={item}
                                     alt={`Thumbnail ${i}`}
-                                    className={`border size-32 m-5 ${index === i ? 'border-2 border-blue-700' : ''}`}
+                                    className={`border size-20 md:size-32 m-5 ${index === i ? 'border-2 border-blue-700' : ''}`}
                                     onClick={() => setIndex(i)}
                                 />
                             </div>
