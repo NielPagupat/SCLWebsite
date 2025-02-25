@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 body {
-    background-image: url( '../src/assets/backgrounds/bg.svg' );
+    background-image: url( '/backgrounds/bg.svg' );
 }
 
 .value-li{
-    background-image: url( '../src/assets/backgrounds/bg.svg' );
+    background-image: url( '/backgrounds/bg.svg' );
     background-size: cover;
 }
 
