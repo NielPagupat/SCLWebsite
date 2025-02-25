@@ -1,3 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-image: url( '/backgrounds/bg.svg' );
+}
+
+.value-li{
+    background-image: url( '/backgrounds/bg.svg' );
+    background-size: cover;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.clip-trapezoid {
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+}
+.clip-trapezoid-reverse {
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
