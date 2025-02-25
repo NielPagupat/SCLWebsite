@@ -6,7 +6,6 @@ import { allExperience } from '../assets/Experience/exp';
 export default function Experience() {
     
     const navigate = useNavigate()
-    const scrollRef = useRef(null);
 
     const uniqueExperience = [];
     const titles = new Set();
@@ -20,24 +19,10 @@ export default function Experience() {
     }
 
     const goToExp = () => {
-        enablePageScroll()
+        window.scrollTo({ top: 0, behavior: 'smooth' })
         navigate('/SCL/Experience')
     }
 
-    const handleScroll = (e) => {
-        if (scrollRef.current) {
-            scrollRef.current.scrollLeft += e.deltaY;
-            e.preventDefault(); // Stop vertical scrolling while inside the div
-        }
-    };
-
-    const disablePageScroll = () => {
-        document.body.style.overflow = 'hidden';
-    };
-
-    const enablePageScroll = () => {
-        document.body.style.overflow = 'auto';
-    };
 
     return (
         <div className='flex flex-col mx-4 md:mx-20 mt-10 m-5 rounded-xl shadow-xl items-end bg-gradient-to-b from-blue-200 to-white bg-PaperBlack' id='experience'>
@@ -48,7 +33,7 @@ export default function Experience() {
                 </div>
                 <span className='border-b w-full border-2 border-SCLBlue ml-5'></span>
             </div>
-            <div className='flex border border-black border-r-0 bg-gradient-to-b from-blue-200 to-white shadow-xl m-5 mr-0 mt-1 mb-14 rounded-tl-3xl p-5 w-full md:w-11/12 overflow-x-auto' ref={scrollRef} onWheel={handleScroll}>  
+            <div className='flex border border-black border-r-0 bg-gradient-to-b from-blue-200 to-white shadow-xl m-5 mr-0 mt-1 mb-14 rounded-tl-3xl p-5 w-full md:w-11/12 overflow-x-auto'>  
                 {
                     uniqueExperience.map((con, i) =>  
                     <div key={i} className='flex flex-1 flex-col items-center min-w-[150px] md:min-w-[200px]'>
@@ -58,7 +43,7 @@ export default function Experience() {
                 }
                 <button className='flex mb-16 justify-center items-center self-center' onClick={goToExp}>
                     <div>
-                        <ChevronRightCircleIcon className='size-12 text-black hover:scale-105 transition duration-300 ease-in-out hover:text-SCLBlue'/>
+                        <ChevronRightCircleIcon className='size-12 text-black hover:scale-105 transition duration-300 ease-in-out hover:text-SCLBlue' onClick={goToExp}/>
                     </div>
                 </button>
             </div>

@@ -4,7 +4,7 @@ import { allExperience } from '../assets/Experience/exp';
 export default function Projects() {
     const exp = [...allExperience].sort((a, b) => (a.Year ? 1 : -1));
   return (
-    <div className='flex flex-wrap justify-around'>
+    <div className='flex flex-wrap justify-around bg-PaperBlack m-2 rounded-xl'>
         {exp.map((exp, i) => (
             <div
                 className='flex flex-col m-5 p-5 border border-black rounded-lg w-96 items-center bg-gradient-to-t from-blue-300 to-lime-400 shadow-xl hover:shadow-SCLYellow hover:shadow-2xl hover:scale-105 transition duration-150 ease-in-out'

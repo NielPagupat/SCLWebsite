@@ -27,6 +27,7 @@ export default function Navigation() {
   const goToService = () => scrollToSection('scl-services');
   const back = () => navigate(-1);
   const backToBanner = () => navigate('/');
+  const backToMenu = () => navigate('/SCL');
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -68,15 +69,16 @@ export default function Navigation() {
           <button className='mr-10 p-3 text-white font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToProductsPortfolio}>Product Portfolio</button>
           <button className='mr-10 p-3 text-white font-semibold hover:text-SCLLightBlue hover:scale-110 transition duration-150 ease-in-out active:scale-95' onClick={goToExperience}>Experiences</button>
         </div>
-      ) : location.pathname === "/SCL/Products" || matchProduct || location.pathname === "/SCL/Experience" ? (
+      ) : location.pathname === "/SCL/Products" || matchProduct ? (
         <div className='flex items-center'>
-          <button onClick={back} className='text-white font-semibold hover:text-SCLLightBlue hover:scale-125 transition duration-150 ease-in-out active:scale-95'>
+          <button onClick={backToMenu} className='text-white font-semibold hover:text-SCLLightBlue hover:scale-125 transition duration-150 ease-in-out active:scale-95'>
             <ChevronsLeft className='w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10'/>
           </button>
+          <h1 className='text-xl font-semibold font-tomorrow text-white mx-5'>Products</h1>
         </div>
       ) : (
         <div className='flex items-center'>
-          <button onClick={back} className='text-white font-semibold hover:text-SCLLightBlue hover:scale-125 transition duration-150 ease-in-out active:scale-95'>
+          <button onClick={backToMenu} className='text-white font-semibold hover:text-SCLLightBlue hover:scale-125 transition duration-150 ease-in-out active:scale-95'>
             <ChevronsLeft className='w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10'/>
           </button>
           <h1 className='font-semibold mr-10 p-3 text-white hidden md:block'>Experiences</h1>

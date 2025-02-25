@@ -34,7 +34,7 @@ export default function Trainings() {
     };
 
     return (
-        <>
+        <div className='bg-PaperBlack m-2 rounded-xl'>
             <div className="flex flex-wrap justify-around">
                 {trainings.map((item, i) => (
                     <div
@@ -73,23 +73,23 @@ export default function Trainings() {
                         </button>
                     </div>
                     <div className="flex w-full flex-1 justify-between items-center">
-                        <button className="text-white p-3" onClick={decrement}>
+                        <button className="text-white p-3 hover:bg-PaperBlack h-full" onClick={decrement}>
                             <ChevronLeft />
                         </button>
                         {items.length > 0 && (
-                            <img src={items[index]} alt={`Training Image ${index}`} className="border text-white max-h-96" />
+                            <img src={items[index]} alt={`Training Image ${index}`} className=" text-white max-h-96" />
                         )}
-                        <button className="text-white p-3" onClick={increment}>
+                        <button className="text-white p-3 hover:bg-PaperBlack h-full" onClick={increment}>
                             <ChevronRight />
                         </button>
                     </div>
-                    <div className="flex h-52 w-full justify-center overflow-x-auto">
+                    <div className="flex h-52 w-full justify-center overflow-x-auto bg-PaperBlack">
                         {items.map((item, i) => (
                             <div key={i} className="cursor-pointer">
                                 <img
                                     src={item}
                                     alt={`Thumbnail ${i}`}
-                                    className={`border size-32 m-5 ${index === i ? 'border-2 border-white' : ''}`}
+                                    className={`border size-32 m-5 ${index === i ? 'border-2 border-blue-700' : ''}`}
                                     onClick={() => setIndex(i)}
                                 />
                             </div>
@@ -97,6 +97,6 @@ export default function Trainings() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

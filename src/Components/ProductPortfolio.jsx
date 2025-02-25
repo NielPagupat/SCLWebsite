@@ -6,27 +6,13 @@ import { ChevronRightCircleIcon, NotebookText } from 'lucide-react';
 export default function ProductPortfolio() {
     const content = allProducts.slice(0, 5);
     const navigate = useNavigate();
-    const scrollRef = useRef(null);
 
     const goToProdAll = () => {
-        enablePageScroll();
+        window.scrollTo({ top: 0, behavior: 'smooth' })
         navigate('/SCL/Products');
     };
 
-    const handleScroll = (e) => {
-        if (scrollRef.current) {
-            scrollRef.current.scrollLeft += e.deltaY;
-            e.preventDefault(); // Stop vertical scrolling while inside the div
-        }
-    };
-
-    const disablePageScroll = () => {
-        document.body.style.overflow = 'hidden';
-    };
-
-    const enablePageScroll = () => {
-        document.body.style.overflow = 'auto';
-    };
+    
 
     return (
         <div className="flex flex-col mx-4 md:mx-20 mt-10 m-5 rounded-xl shadow-xl items-end bg-gradient-to-b from-blue-200 to-white bg-PaperBlack" id="products-portfolio">
@@ -37,7 +23,7 @@ export default function ProductPortfolio() {
                 </div> 
                 <span className='border-b w-full border-2 ml-5 border-SCLBlue'></span>
             </div>
-            <div className='flex border border-black border-r-0 bg-gradient-to-b from-blue-200 to-white shadow-xl m-5 mr-0 mt-1 mb-14 rounded-tl-3xl p-5 w-full md:w-11/12 overflow-x-auto' ref={scrollRef} onWheel={handleScroll}> 
+            <div className='flex border border-black border-r-0 bg-gradient-to-b from-blue-200 to-white shadow-xl m-5 mr-0 mt-1 mb-14 rounded-tl-3xl p-5 w-full md:w-11/12 overflow-x-auto'> 
            
                 {content.map((con, i) => (
                     <div key={i} className="flex flex-col items-center min-w-[150px] md:min-w-[200px] ">
