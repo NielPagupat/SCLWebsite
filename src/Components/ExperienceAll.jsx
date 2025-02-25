@@ -1,23 +1,28 @@
-import React from 'react'
-import { aboutUs } from '../assets/Text/text'
+import React, { useState, useEffect } from 'react';
+import { Outlet, useLocation, useNavigate } from 'react-router';
 
 export default function ExperienceAll() {
-    const exp = [1,2,3,4,5,6,7,8,9,10,11,12]
-  return (
-    <div>
-        {
-            exp.map((e)=>
-            <div className='flex m-5 p-5 border border-black rounded-lg'>
-                <div>
-                    <img src="" alt="image" className='size-80 border border-black' />
-                </div>
-                <div className='ml-10'>
-                    <h1 className='text-2xl font-semibold'>Title</h1>
-                    <p>{aboutUs}</p>
+    
+    const navigate = useNavigate();
+    const location =  useLocation();
+    const goToProjects = () => {
+        navigate('/SCL/Experience');
+    }
+    const goToTrainings = () => {
+        navigate('/SCL/Experience/Trainings');
+    }
+
+    return (
+        <div>
+            <div>
+                <div className='flex justify-center'>
+                    <button className={`m-10 text-2xl font-semibold font-tomorrow rounded-xl p-5 ${location.pathname==='/SCL/Experience'?'bg-PaperBlack text-white':''}`} onClick={goToProjects}>Projects</button>
+                    <button className={`m-10 text-2xl font-semibold font-tomorrow rounded-xl p-5 ${location.pathname==='/SCL/Experience/Trainings'?'bg-PaperBlack text-white':''}`} onClick={goToTrainings}>Trainings</button>
                 </div>
             </div>
-            )
-        }
-    </div>
-  )
+            <div>  
+                <Outlet />
+            </div>
+        </div>
+    );
 }
