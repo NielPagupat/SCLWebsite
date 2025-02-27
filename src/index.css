@@ -7,6 +7,16 @@ body {
     background-image: url( '/backgrounds/bg.svg' );
 }
 
+link {
+    width: 20px;
+    height: 20px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
 .value-li{
     background-image: url( '/backgrounds/bg.svg' );
     background-size: cover;
