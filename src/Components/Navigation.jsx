@@ -74,14 +74,14 @@ export default function Navigation() {
           <button onClick={backToMenu} className='text-white font-semibold hover:text-SCLLightBlue hover:scale-125 transition duration-150 ease-in-out active:scale-95'>
             <ChevronsLeft className='w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10'/>
           </button>
-          <h1 className='text-xl font-semibold font-tomorrow text-white mx-5'>Products</h1>
+          <h1 className='text-xl font-semibold font-tomorrow text-white mx-5 hidden md:block'>Products</h1>
         </div>
       ) : matchProduct ? (
         <div className='flex items-center'>
           <button onClick={() => navigate('/SCL/Products')} className='text-white font-semibold hover:text-SCLLightBlue hover:scale-125 transition duration-150 ease-in-out active:scale-95'>
             <ChevronsLeft className='w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10'/>
           </button>
-          <h1 className='text-xl font-semibold font-tomorrow text-white mx-5'>Products</h1>
+          <h1 className='text-xl font-semibold font-tomorrow text-white mx-5 hidden md:block'>Products</h1>
         </div>
       ) : (
         <div className='flex items-center'>
